@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMR Scanner with AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-bottom: 40px;
+        }
+        .omr-header {
+            background-color: #343a40;
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+        .form-container {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        }
+        .template-image {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+        .nav-link {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        .nav-link:hover {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">OMR Scanner</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/demo">Demo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/training">Training</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="omr-header text-center">
+        <div class="container">
+            <h1>OMR Scanner with AI</h1>
+            <p class="lead">Upload an OMR sheet image and get instant results</p>
+        </div>
+    </div>
+
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="form-container">
+                    <h2 class="mb-4 text-center">Scan Your OMR Sheet</h2>
+                    
+                    <form action="/upload" method="post" enctype="multipart/form-data" class="mb-4">
+                        <div class="mb-3">
+                            <label for="file" class="form-label">Upload OMR Sheet Image:</label>
+                            <input type="file" class="form-control" id="file" name="file" accept="image/*" required>
+                            <div class="form-text">Supported formats: JPG, PNG, JPEG</div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="answer_key" class="form-label">Answer Key (Optional):</label>
+                            <input type="text" class="form-control" id="answer_key" name="answer_key" placeholder="e.g., ABCDABCD">
+                            <div class="form-text">Enter the correct answers as a string of letters (A, B, C, D)</div>
+                        </div>
+                        
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">Scan OMR Sheet</button>
+                        </div>
+                    </form>
+
+                    <hr class="my-4">
+                    
+                    <div class="text-center">
+                        <h3 class="mb-3">Need an OMR Template?</h3>
+                        <p>Download our standard OMR template or customize your own.</p>
+                        <a href="/api/generate-template" class="btn btn-outline-primary me-2">Download Template</a>
+                        <a href="/demo" class="btn btn-outline-secondary">Customize Template</a>
+                    </div>
+                </div>
+                
+                <div class="alert alert-info mt-4 text-center">
+                    <p class="mb-0"><strong>Want better accuracy?</strong> <a href="/training" class="alert-link">Train the model</a> with your own samples to improve recognition.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">© 2025 OMR Scanner with AI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

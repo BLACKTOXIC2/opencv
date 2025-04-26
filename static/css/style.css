@@ -1,0 +1,80 @@
+/* Global styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Authentication styles */
+.auth-container {
+    max-width: 450px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    background-color: white;
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.auth-header h2 {
+    color: #333;
+    font-weight: 600;
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.auth-error {
+    color: #dc3545;
+    margin-top: 15px;
+    text-align: center;
+    display: none;
+}
+
+.auth-success {
+    color: #198754;
+    margin-top: 15px;
+    text-align: center;
+    display: none;
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #3b82f6;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #2563eb;
+}
+
+/* Form styles */
+.form-control {
+    padding: 12px;
+    border-radius: 6px;
+}
+
+/* Navbar styles */
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+/* Footer styles */
+footer {
+    margin-top: auto;
+}

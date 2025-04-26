@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block title %}Login - OMR Scanner{% endblock %}
+
+{% block content %}
+<div class="auth-container">
+    <div class="auth-header">
+        <h2>Log In</h2>
+        <p class="text-muted">Enter your credentials to access your account</p>
+    </div>
+    <form id="login-form">
+        <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" required>
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="remember-me">
+            <label class="form-check-label" for="remember-me">Remember me</label>
+            <a href="/forgotpassword" class="float-end">Forgot password?</a>
+        </div>
+        <div class="auth-error" id="error-message"></div>
+        <button type="submit" class="btn btn-primary">Sign In</button>
+    </form>
+    <div class="auth-footer">
+        <p>Don't have an account? <a href="/signup">Sign up</a></p>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script type="module">
+    import supabase from '/static/js/supabase.js';
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Check for redirect parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const redirect = urlParams.get('redirect');
+        
+        document.getElementById('login-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const errorMessage = document.getElementById('error-message');
+            
+            try {
+                errorMessage.style.display = 'none';
+                const { data, error } = await supabase.auth.signInWithPassword({
+                    email,
+                    password
+                });
+                
+                if (error) {
+                    throw error;
+                }
+                
+                // Redirect to specified page or dashboard
+                if (redirect) {
+                    window.location.href = redirect;
+                } else {
+                    window.location.href = '/';
+                }
+                
+            } catch (error) {
+                errorMessage.textContent = error.message || 'Failed to sign in';
+                errorMessage.style.display = 'block';
+                console.error('Error signing in:', error);
+            }
+        });
+    });
+</script>
+{% endblock %} 

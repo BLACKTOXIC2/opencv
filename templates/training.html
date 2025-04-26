@@ -1,0 +1,410 @@
+{% extends "base.html" %}
+
+{% block title %}Model Training - OMR Scanner{% endblock %}
+
+{% block extra_css %}
+<style>
+    .training-header {
+        background-color: #343a40;
+        color: white;
+        padding: 1.5rem 0;
+        margin-bottom: 2rem;
+    }
+    .training-container {
+        background-color: #f8f9fa;
+        border-radius: 10px;
+        padding: 2rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        margin-bottom: 2rem;
+    }
+    .sample-tile {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+        border: 1px solid #dee2e6;
+        border-radius: 4px;
+        margin: 5px;
+        padding: 5px;
+        background-color: white;
+    }
+    .drop-zone {
+        border: 2px dashed #ccc;
+        border-radius: 5px;
+        padding: 25px;
+        text-align: center;
+        cursor: pointer;
+        transition: border 0.3s;
+    }
+    .drop-zone:hover {
+        border-color: #0d6efd;
+    }
+    .drop-zone.highlight {
+        border-color: #0d6efd;
+        background-color: #f0f7ff;
+    }
+    #progressContainer {
+        display: none;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="training-header text-center">
+    <div class="container">
+        <h1>Train the OMR Recognition Model</h1>
+        <p class="lead">Upload training samples and improve recognition accuracy</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="alert alert-info">
+        <h4 class="alert-heading">Why Train the Model?</h4>
+        <p>Training the model with your specific bubble samples helps improve recognition accuracy for your particular OMR forms. 
+            The more diverse samples you provide, the better the system will handle various real-world scenarios.</p>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="training-container">
+                <h3 class="mb-4">Upload Training Samples</h3>
+                
+                <div class="mb-4">
+                    <h5>Filled Bubbles</h5>
+                    <p class="small text-muted">Upload images of bubbles that are filled in. Try to include a variety of marking styles.</p>
+                    
+                    <div id="filledDropZone" class="drop-zone mb-3">
+                        <span class="drop-zone__prompt">Drop filled bubble images here or click to browse</span>
+                        <input type="file" id="filledInput" class="drop-zone__input" accept="image/*" multiple hidden>
+                    </div>
+                    
+                    <div class="d-flex flex-wrap" id="filledThumbnails"></div>
+                </div>
+                
+                <div class="mb-4">
+                    <h5>Unfilled Bubbles</h5>
+                    <p class="small text-muted">Upload images of empty bubbles to help the model distinguish between marked and unmarked options.</p>
+                    
+                    <div id="unfilledDropZone" class="drop-zone mb-3">
+                        <span class="drop-zone__prompt">Drop unfilled bubble images here or click to browse</span>
+                        <input type="file" id="unfilledInput" class="drop-zone__input" accept="image/*" multiple hidden>
+                    </div>
+                    
+                    <div class="d-flex flex-wrap" id="unfilledThumbnails"></div>
+                </div>
+            </div>
+            
+            <div class="training-container">
+                <h3 class="mb-4">Guidelines for Good Samples</h3>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item">Use clear, high-contrast images</li>
+                    <li class="list-group-item">Include a variety of marking styles (pen, pencil, etc.)</li>
+                    <li class="list-group-item">Try to crop images to focus on just the bubble</li>
+                    <li class="list-group-item">Include partially filled bubbles for better discrimination</li>
+                    <li class="list-group-item">Add examples with different lighting conditions</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="col-lg-6">
+            <div class="training-container">
+                <h3 class="mb-4">Model Training Status</h3>
+                
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Training Data Statistics</h5>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="mb-3">
+                                    <strong>Filled Samples:</strong>
+                                    <span id="filledCount">0</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="mb-3">
+                                    <strong>Unfilled Samples:</strong>
+                                    <span id="unfilledCount">0</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress mb-3">
+                            <div id="progressBar" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                        </div>
+                        
+                        <div class="text-center" id="statusMessage">
+                            <span class="badge bg-warning">Not enough samples</span>
+                            <p class="small text-muted mt-2">Need at least 10 samples of each type</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="progressContainer" class="mb-4">
+                    <div class="d-flex justify-content-center mb-3">
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+                    <p class="text-center" id="progressMessage">Training in progress, please wait...</p>
+                </div>
+                
+                <div class="d-grid gap-2">
+                    <button id="trainButton" class="btn btn-primary" disabled>Train Model</button>
+                    <button id="resetButton" class="btn btn-outline-danger">Reset Training Data</button>
+                </div>
+            </div>
+            
+            <div class="training-container">
+                <h3 class="mb-4">Model Performance</h3>
+                
+                <div id="modelStats">
+                    <div class="alert alert-secondary">
+                        <p class="mb-0">No trained model available yet. Train a model to see performance metrics.</p>
+                    </div>
+                </div>
+                
+                <div class="mb-3" id="modelAccuracy" style="display: none;">
+                    <h5>Model Accuracy</h5>
+                    <div class="progress">
+                        <div id="accuracyBar" class="progress-bar bg-success" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script type="module" src="/static/js/protectPage.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // DOM elements
+        const filledDropZone = document.getElementById('filledDropZone');
+        const unfilledDropZone = document.getElementById('unfilledDropZone');
+        const filledInput = document.getElementById('filledInput');
+        const unfilledInput = document.getElementById('unfilledInput');
+        const filledThumbnails = document.getElementById('filledThumbnails');
+        const unfilledThumbnails = document.getElementById('unfilledThumbnails');
+        const filledCount = document.getElementById('filledCount');
+        const unfilledCount = document.getElementById('unfilledCount');
+        const progressBar = document.getElementById('progressBar');
+        const statusMessage = document.getElementById('statusMessage');
+        const trainButton = document.getElementById('trainButton');
+        const resetButton = document.getElementById('resetButton');
+        const progressContainer = document.getElementById('progressContainer');
+        const progressMessage = document.getElementById('progressMessage');
+        const modelStats = document.getElementById('modelStats');
+        const modelAccuracy = document.getElementById('modelAccuracy');
+        const accuracyBar = document.getElementById('accuracyBar');
+        
+        // Set up drag and drop for filled bubbles
+        setupDropZone(filledDropZone, filledInput, 'filled');
+        
+        // Set up drag and drop for unfilled bubbles
+        setupDropZone(unfilledDropZone, unfilledInput, 'unfilled');
+        
+        // Function to setup drop zones
+        function setupDropZone(dropZone, input, sampleType) {
+            // Click to browse
+            dropZone.addEventListener('click', () => input.click());
+            
+            // Handle file selection
+            input.addEventListener('change', () => {
+                if (input.files.length) {
+                    uploadFiles(input.files, sampleType);
+                }
+            });
+            
+            // Drag and drop events
+            dropZone.addEventListener('dragover', e => {
+                e.preventDefault();
+                dropZone.classList.add('highlight');
+            });
+            
+            dropZone.addEventListener('dragleave', () => {
+                dropZone.classList.remove('highlight');
+            });
+            
+            dropZone.addEventListener('drop', e => {
+                e.preventDefault();
+                dropZone.classList.remove('highlight');
+                
+                if (e.dataTransfer.files.length) {
+                    uploadFiles(e.dataTransfer.files, sampleType);
+                }
+            });
+        }
+        
+        // Function to upload files
+        async function uploadFiles(files, sampleType) {
+            for (const file of files) {
+                // Check if it's an image
+                if (!file.type.startsWith('image/')) {
+                    alert('Only image files are allowed');
+                    continue;
+                }
+                
+                try {
+                    // Create FormData
+                    const formData = new FormData();
+                    formData.append('file', file);
+                    formData.append('sample_type', sampleType);
+                    
+                    // Upload file
+                    const response = await fetch('/api/upload-training-sample', {
+                        method: 'POST',
+                        body: formData
+                    });
+                    
+                    const result = await response.json();
+                    
+                    if (result.success) {
+                        // Create thumbnail
+                        const reader = new FileReader();
+                        reader.onload = e => {
+                            const thumbnail = document.createElement('img');
+                            thumbnail.src = e.target.result;
+                            thumbnail.classList.add('sample-tile');
+                            
+                            if (sampleType === 'filled') {
+                                filledThumbnails.appendChild(thumbnail);
+                            } else {
+                                unfilledThumbnails.appendChild(thumbnail);
+                            }
+                        };
+                        reader.readAsDataURL(file);
+                    } else {
+                        alert(`Error uploading file: ${result.error}`);
+                    }
+                } catch (err) {
+                    console.error('Error uploading file:', err);
+                    alert('Failed to upload file');
+                }
+            }
+            
+            // Update stats after uploading
+            updateStats();
+        }
+        
+        // Function to update training stats
+        async function updateStats() {
+            try {
+                const response = await fetch('/api/training-stats');
+                const data = await response.json();
+                
+                if (data.success) {
+                    const stats = data.stats;
+                    
+                    // Update counts
+                    filledCount.textContent = stats.filled_samples;
+                    unfilledCount.textContent = stats.unfilled_samples;
+                    
+                    // Update progress
+                    const minSamples = stats.min_samples_needed;
+                    const totalSamples = stats.total_samples;
+                    const percent = Math.min(100, Math.floor((totalSamples / (minSamples * 2)) * 100));
+                    
+                    progressBar.style.width = `${percent}%`;
+                    progressBar.textContent = `${percent}%`;
+                    progressBar.setAttribute('aria-valuenow', percent);
+                    
+                    // Update status message
+                    if (stats.filled_samples >= 10 && stats.unfilled_samples >= 10) {
+                        statusMessage.innerHTML = `
+                            <span class="badge bg-success">Ready to train</span>
+                            <p class="small text-muted mt-2">You have enough samples to train a model</p>
+                        `;
+                        trainButton.disabled = false;
+                    } else {
+                        statusMessage.innerHTML = `
+                            <span class="badge bg-warning">Not enough samples</span>
+                            <p class="small text-muted mt-2">Need at least 10 samples of each type</p>
+                        `;
+                        trainButton.disabled = true;
+                    }
+                    
+                    // Update model status
+                    if (stats.bubble_model_trained) {
+                        modelStats.innerHTML = `
+                            <div class="alert alert-success">
+                                <p class="mb-0">Model trained successfully and ready to use</p>
+                            </div>
+                        `;
+                    }
+                }
+            } catch (err) {
+                console.error('Error fetching stats:', err);
+            }
+        }
+        
+        // Train model button
+        trainButton.addEventListener('click', async () => {
+            progressContainer.style.display = 'block';
+            trainButton.disabled = true;
+            resetButton.disabled = true;
+            
+            try {
+                const response = await fetch('/api/train-model', {
+                    method: 'POST'
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    progressMessage.textContent = result.message;
+                    
+                    // Poll for training completion
+                    const checkInterval = setInterval(async () => {
+                        const statsResponse = await fetch('/api/training-stats');
+                        const statsData = await statsResponse.json();
+                        
+                        if (statsData.success && statsData.stats.bubble_model_trained) {
+                            clearInterval(checkInterval);
+                            
+                            progressContainer.style.display = 'none';
+                            modelStats.innerHTML = `
+                                <div class="alert alert-success">
+                                    <p class="mb-0">Model trained successfully and ready to use</p>
+                                </div>
+                            `;
+                            
+                            // Display accuracy if available
+                            if (result.accuracy) {
+                                const accuracy = Math.floor(result.accuracy * 100);
+                                modelAccuracy.style.display = 'block';
+                                accuracyBar.style.width = `${accuracy}%`;
+                                accuracyBar.textContent = `${accuracy}%`;
+                                accuracyBar.setAttribute('aria-valuenow', accuracy);
+                            }
+                            
+                            resetButton.disabled = false;
+                        }
+                    }, 5000); // Check every 5 seconds
+                } else {
+                    progressContainer.style.display = 'none';
+                    alert(`Error training model: ${result.error}`);
+                    resetButton.disabled = false;
+                }
+            } catch (err) {
+                console.error('Error training model:', err);
+                progressContainer.style.display = 'none';
+                alert('Failed to train model');
+                resetButton.disabled = false;
+            }
+        });
+        
+        // Reset button (just for demonstration - in a real app you'd want to confirm this action)
+        resetButton.addEventListener('click', () => {
+            if (confirm('Are you sure you want to reset all training data? This cannot be undone.')) {
+                // In a real application, you'd add an API endpoint to delete training data
+                filledThumbnails.innerHTML = '';
+                unfilledThumbnails.innerHTML = '';
+                updateStats();
+            }
+        });
+        
+        // Load initial stats
+        updateStats();
+    });
+</script>
+{% endblock %} 

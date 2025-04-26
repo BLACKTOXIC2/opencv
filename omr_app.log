@@ -1,0 +1,996 @@
+2025-04-25 16:51:32,964 - google.auth.compute_engine._metadata - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+2025-04-25 16:51:37,053 - google.auth.compute_engine._metadata - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+2025-04-25 16:51:42,180 - google.auth.compute_engine._metadata - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+2025-04-25 16:51:42,181 - google.auth._default - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-04-25 16:51:42,183 - omr_app - ERROR - Error using Gemini API: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-04-25 16:52:53,794 - google.auth.compute_engine._metadata - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+2025-04-25 16:52:57,786 - google.auth.compute_engine._metadata - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+2025-04-25 16:53:02,619 - google.auth.compute_engine._metadata - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+2025-04-25 16:53:02,620 - google.auth._default - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-04-25 16:53:02,621 - omr_app - ERROR - Error using Gemini API: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-04-25 17:42:54,641 - google.auth.compute_engine._metadata - WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+2025-04-25 17:42:58,691 - google.auth.compute_engine._metadata - WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+2025-04-25 17:43:03,898 - google.auth.compute_engine._metadata - WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: timed out
+2025-04-25 17:43:03,899 - google.auth._default - WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+2025-04-25 17:43:03,900 - omr_app - ERROR - Error using Gemini API: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+2025-04-25 18:31:48,909 - omr_app - INFO - Received file: dcd9265d-1645-480c-94fa-2501b4763fd6.jpg, size: 97563 bytes
+2025-04-25 18:31:48,911 - omr_app - INFO - Answer key provided: 2,0,2,1,2,2,2,2,2,1
+2025-04-25 18:31:48,912 - omr_app - INFO - Created directories: static/uploads/8993ff7c-78ee-41d1-82f4-512210d66692, static/results/8993ff7c-78ee-41d1-82f4-512210d66692
+2025-04-25 18:31:48,918 - omr_app - INFO - Saved file to static/uploads/8993ff7c-78ee-41d1-82f4-512210d66692/dcd9265d-1645-480c-94fa-2501b4763fd6.jpg
+2025-04-25 18:31:48,918 - omr_app - INFO - Processed answer key: []
+2025-04-25 18:31:49,796 - omr_app - INFO - Applied image enhancement
+2025-04-25 18:31:49,796 - omr_app - INFO - Starting OMR processing...
+2025-04-25 18:31:49,900 - omr_app - INFO - Processing completed in 0.10 seconds
+2025-04-25 18:31:49,900 - omr_app - INFO - OMR processing successful, detected 1 answers
+2025-04-25 18:31:49,900 - omr_app - INFO - Question 1: D, Correct: False, Confidence: 52
+2025-04-25 18:31:49,917 - omr_app - INFO - Successfully encoded result image, size: 225852
+2025-04-25 18:31:49,918 - omr_app - INFO - Returning successful response with 1 answers
+2025-04-25 18:32:09,157 - omr_app - INFO - Received file: e37b96b5-c470-4a56-8eab-ff26adbdf70c.jpg, size: 67260 bytes
+2025-04-25 18:32:09,158 - omr_app - INFO - Answer key provided: 2,0,2,1,2,2,2,2,2,1
+2025-04-25 18:32:09,160 - omr_app - INFO - Created directories: static/uploads/54085949-fa3b-42c9-a432-d0e598dc4e32, static/results/54085949-fa3b-42c9-a432-d0e598dc4e32
+2025-04-25 18:32:09,166 - omr_app - INFO - Saved file to static/uploads/54085949-fa3b-42c9-a432-d0e598dc4e32/e37b96b5-c470-4a56-8eab-ff26adbdf70c.jpg
+2025-04-25 18:32:09,167 - omr_app - INFO - Processed answer key: []
+2025-04-25 18:32:10,052 - omr_app - INFO - Applied image enhancement
+2025-04-25 18:32:10,052 - omr_app - INFO - Starting OMR processing...
+2025-04-25 18:32:10,176 - omr_app - INFO - Processing completed in 0.12 seconds
+2025-04-25 18:32:10,177 - omr_app - INFO - OMR processing successful, detected 10 answers
+2025-04-25 18:32:10,177 - omr_app - INFO - Question 1: B, Correct: False, Confidence: 62
+2025-04-25 18:32:10,178 - omr_app - INFO - Question 2: Not marked
+2025-04-25 18:32:10,178 - omr_app - INFO - Question 3: D, Correct: False, Confidence: 69
+2025-04-25 18:32:10,178 - omr_app - INFO - Question 4: A, Correct: False, Confidence: 59
+2025-04-25 18:32:10,179 - omr_app - INFO - Question 5: C, Correct: False, Confidence: 60
+2025-04-25 18:32:10,179 - omr_app - INFO - Question 6: B, Correct: False, Confidence: 59
+2025-04-25 18:32:10,179 - omr_app - INFO - Question 7: Not marked
+2025-04-25 18:32:10,180 - omr_app - INFO - Question 8: Not marked
+2025-04-25 18:32:10,180 - omr_app - INFO - Question 9: C, Correct: False, Confidence: 75
+2025-04-25 18:32:10,181 - omr_app - INFO - Question 10: B, Correct: False, Confidence: 71
+2025-04-25 18:32:10,193 - omr_app - INFO - Successfully encoded result image, size: 197748
+2025-04-25 18:32:10,193 - omr_app - INFO - Returning successful response with 10 answers
+2025-04-25 18:34:09,209 - omr_app - INFO - Received file: e37b96b5-c470-4a56-8eab-ff26adbdf70c.jpg, size: 67260 bytes
+2025-04-25 18:34:09,210 - omr_app - INFO - Answer key provided: 2,0,2,1,2,2,2,2,2,1
+2025-04-25 18:34:09,212 - omr_app - INFO - Created directories: static/uploads/a6a77aa0-b853-4fa2-b76b-4e4d6ee25dac, static/results/a6a77aa0-b853-4fa2-b76b-4e4d6ee25dac
+2025-04-25 18:34:09,215 - omr_app - INFO - Saved file to static/uploads/a6a77aa0-b853-4fa2-b76b-4e4d6ee25dac/e37b96b5-c470-4a56-8eab-ff26adbdf70c.jpg
+2025-04-25 18:34:09,215 - omr_app - INFO - Processed answer key: []
+2025-04-25 18:34:10,177 - omr_app - INFO - Applied image enhancement
+2025-04-25 18:34:10,178 - omr_app - INFO - Starting OMR processing...
+2025-04-25 18:34:10,254 - omr_app - INFO - Processing completed in 0.08 seconds
+2025-04-25 18:34:10,255 - omr_app - INFO - OMR processing successful, detected 10 answers
+2025-04-25 18:34:10,255 - omr_app - INFO - Question 1: B, Correct: False, Confidence: 62
+2025-04-25 18:34:10,257 - omr_app - INFO - Question 2: Not marked
+2025-04-25 18:34:10,257 - omr_app - INFO - Question 3: D, Correct: False, Confidence: 69
+2025-04-25 18:34:10,258 - omr_app - INFO - Question 4: A, Correct: False, Confidence: 59
+2025-04-25 18:34:10,258 - omr_app - INFO - Question 5: C, Correct: False, Confidence: 60
+2025-04-25 18:34:10,259 - omr_app - INFO - Question 6: B, Correct: False, Confidence: 59
+2025-04-25 18:34:10,259 - omr_app - INFO - Question 7: Not marked
+2025-04-25 18:34:10,260 - omr_app - INFO - Question 8: Not marked
+2025-04-25 18:34:10,260 - omr_app - INFO - Question 9: C, Correct: False, Confidence: 75
+2025-04-25 18:34:10,260 - omr_app - INFO - Question 10: B, Correct: False, Confidence: 71
+2025-04-25 18:34:10,273 - omr_app - INFO - Successfully encoded result image, size: 197748
+2025-04-25 18:34:10,274 - omr_app - INFO - Returning successful response with 10 answers
+2025-04-25 18:34:36,615 - omr_app - INFO - Received file: Handwritten_2025-04-24_022929.jpg, size: 339503 bytes
+2025-04-25 18:34:36,616 - omr_app - INFO - Answer key provided: 2,2,1,1,3,2,1,1,1,2
+2025-04-25 18:34:36,618 - omr_app - INFO - Created directories: static/uploads/6c9f549a-9586-4c01-a2a5-645ea287aeeb, static/results/6c9f549a-9586-4c01-a2a5-645ea287aeeb
+2025-04-25 18:34:36,623 - omr_app - INFO - Saved file to static/uploads/6c9f549a-9586-4c01-a2a5-645ea287aeeb/Handwritten_2025-04-24_022929.jpg
+2025-04-25 18:34:36,624 - omr_app - INFO - Processed answer key: []
+2025-04-25 18:34:41,255 - omr_app - INFO - Applied image enhancement
+2025-04-25 18:34:41,256 - omr_app - INFO - Starting OMR processing...
+2025-04-25 18:34:41,567 - omr_app - INFO - Processing completed in 0.31 seconds
+2025-04-25 18:34:41,567 - omr_app - INFO - OMR processing successful, detected 3 answers
+2025-04-25 18:34:41,567 - omr_app - INFO - Question 1: B, Correct: False, Confidence: 59
+2025-04-25 18:34:41,568 - omr_app - INFO - Question 2: B, Correct: False, Confidence: 53
+2025-04-25 18:34:41,568 - omr_app - INFO - Question 3: A, Correct: False, Confidence: 49
+2025-04-25 18:34:41,597 - omr_app - INFO - Successfully encoded result image, size: 477936
+2025-04-25 18:34:41,597 - omr_app - INFO - Returning successful response with 3 answers
+2025-04-25 18:35:40,319 - omr_app - INFO - Received file: Handwritten_2025-04-24_022929.jpg, size: 339503 bytes
+2025-04-25 18:35:40,320 - omr_app - INFO - Answer key provided: 2,2,1,1,3,2,1,1,1,2
+2025-04-25 18:35:40,322 - omr_app - INFO - Created directories: static/uploads/ef0f7ef4-7f42-4b4a-9805-dabc29139b83, static/results/ef0f7ef4-7f42-4b4a-9805-dabc29139b83
+2025-04-25 18:35:40,325 - omr_app - INFO - Saved file to static/uploads/ef0f7ef4-7f42-4b4a-9805-dabc29139b83/Handwritten_2025-04-24_022929.jpg
+2025-04-25 18:35:40,326 - omr_app - INFO - Processed answer key: []
+2025-04-25 18:35:44,918 - omr_app - INFO - Applied image enhancement
+2025-04-25 18:35:44,919 - omr_app - INFO - Starting OMR processing...
+2025-04-25 18:35:45,306 - omr_app - INFO - Processing completed in 0.39 seconds
+2025-04-25 18:35:45,306 - omr_app - INFO - OMR processing successful, detected 3 answers
+2025-04-25 18:35:45,307 - omr_app - INFO - Question 1: B, Correct: False, Confidence: 59
+2025-04-25 18:35:45,307 - omr_app - INFO - Question 2: B, Correct: False, Confidence: 53
+2025-04-25 18:35:45,308 - omr_app - INFO - Question 3: A, Correct: False, Confidence: 49
+2025-04-25 18:35:45,323 - omr_app - INFO - Successfully encoded result image, size: 477936
+2025-04-25 18:35:45,324 - omr_app - INFO - Returning successful response with 3 answers
+2025-04-25 18:40:59,670 - omr_app - ERROR - Error using Gemini API: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-04-25 18:40:59,672 - omr_app - ERROR - Error processing OMR: Object of type ndarray is not JSON serializable
+2025-04-25 18:42:35,637 - omr_app - ERROR - Error using Gemini API: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-04-25 18:42:35,639 - omr_app - ERROR - Error processing OMR: Object of type ndarray is not JSON serializable
+2025-04-25 18:42:48,492 - omr_app - ERROR - Error using Gemini API: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-04-25 18:42:48,494 - omr_app - ERROR - Error processing OMR: Object of type ndarray is not JSON serializable
+2025-04-25 18:43:39,642 - omr_app - ERROR - Error using Gemini API: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-04-25 18:43:39,644 - omr_app - ERROR - Error processing OMR: Object of type ndarray is not JSON serializable
+2025-04-25 18:45:12,552 - omr_app - ERROR - Error using Gemini API: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-04-25 18:45:14,060 - omr_app - ERROR - Error processing OMR: object dict can't be used in 'await' expression
+2025-04-25 18:47:57,210 - omr_app - ERROR - Error using Gemini API: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-04-25 18:47:59,521 - omr_app - ERROR - Error processing OMR: float() argument must be a string or a real number, not 'NoneType'
+2025-04-25 18:50:53,950 - omr_app - INFO - Received file: Handwritten_2025-04-24_022929.jpg, size: 339503 bytes
+2025-04-25 18:50:53,952 - omr_app - INFO - Answer key provided: 2,0,2,1,2,2,2,2,2,1
+2025-04-25 18:50:53,953 - omr_app - INFO - Created directories: static/uploads/98f1de3a-95ff-47fa-aed3-9499014675b9, static/results/98f1de3a-95ff-47fa-aed3-9499014675b9
+2025-04-25 18:50:53,958 - omr_app - INFO - Saved file to static/uploads/98f1de3a-95ff-47fa-aed3-9499014675b9/Handwritten_2025-04-24_022929.jpg
+2025-04-25 18:50:53,959 - omr_app - INFO - Processed answer key: []
+2025-04-25 18:50:58,268 - omr_app - INFO - Applied image enhancement
+2025-04-25 18:50:58,268 - omr_app - INFO - Starting OMR processing...
+2025-04-25 18:50:58,594 - omr_app - INFO - Processing completed in 0.33 seconds
+2025-04-25 18:50:58,595 - omr_app - INFO - OMR processing successful, detected 3 answers
+2025-04-25 18:50:58,595 - omr_app - INFO - Question 1: B, Correct: False, Confidence: 59
+2025-04-25 18:50:58,595 - omr_app - INFO - Question 2: B, Correct: False, Confidence: 53
+2025-04-25 18:50:58,596 - omr_app - INFO - Question 3: A, Correct: False, Confidence: 49
+2025-04-25 18:50:58,611 - omr_app - INFO - Successfully encoded result image, size: 477936
+2025-04-25 18:51:00,788 - omr_app - ERROR - Error using Gemini API: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-04-25 18:51:00,790 - omr_app - INFO - Generated Gemini analysis
+2025-04-25 18:51:00,791 - omr_app - INFO - Returning successful response with 3 answers
+2025-04-25 18:55:31,988 - omr_app - INFO - Received file: b5be7633-d2bb-4e9f-8a69-58d6b13c43db.jpg, size: 146141 bytes
+2025-04-25 18:55:31,989 - omr_app - INFO - Answer key provided: 2,0,2,1,2,2,2,2,2,1
+2025-04-25 18:55:31,991 - omr_app - INFO - Created directories: static/uploads/0989fb3a-b71f-4ab9-ac64-abc9481f3dd8, static/results/0989fb3a-b71f-4ab9-ac64-abc9481f3dd8
+2025-04-25 18:55:31,995 - omr_app - INFO - Saved file to static/uploads/0989fb3a-b71f-4ab9-ac64-abc9481f3dd8/b5be7633-d2bb-4e9f-8a69-58d6b13c43db.jpg
+2025-04-25 18:55:31,996 - omr_app - INFO - Processed answer key: []
+2025-04-25 18:55:32,804 - omr_app - INFO - Applied image enhancement
+2025-04-25 18:55:32,805 - omr_app - INFO - Starting OMR processing...
+2025-04-25 18:55:32,905 - omr_app - INFO - Processing completed in 0.10 seconds
+2025-04-25 18:55:32,906 - omr_app - INFO - OMR processing successful, detected 9 answers
+2025-04-25 18:55:32,907 - omr_app - INFO - Question 1: B, Correct: False, Confidence: 49
+2025-04-25 18:55:32,907 - omr_app - INFO - Question 2: Not marked
+2025-04-25 18:55:32,908 - omr_app - INFO - Question 3: A, Correct: False, Confidence: 62
+2025-04-25 18:55:32,908 - omr_app - INFO - Question 4: B, Correct: False, Confidence: 46
+2025-04-25 18:55:32,908 - omr_app - INFO - Question 5: C, Correct: False, Confidence: 55
+2025-04-25 18:55:32,909 - omr_app - INFO - Question 6: C, Correct: False, Confidence: 65
+2025-04-25 18:55:32,909 - omr_app - INFO - Question 7: B, Correct: False, Confidence: 58
+2025-04-25 18:55:32,909 - omr_app - INFO - Question 8: D, Correct: False, Confidence: 63
+2025-04-25 18:55:32,910 - omr_app - INFO - Question 9: Not marked
+2025-04-25 18:55:32,926 - omr_app - INFO - Successfully encoded result image, size: 423960
+2025-04-25 18:55:35,716 - omr_app - ERROR - Error using Gemini API: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-04-25 18:55:35,717 - omr_app - INFO - Generated Gemini analysis
+2025-04-25 18:55:35,718 - omr_app - INFO - Returning successful response with 9 answers
+2025-04-25 18:57:12,049 - omr_app - INFO - Received file: b5be7633-d2bb-4e9f-8a69-58d6b13c43db.jpg, size: 146141 bytes
+2025-04-25 18:57:12,050 - omr_app - INFO - Answer key provided: 2,0,2,1,2,2,2,2,2,1
+2025-04-25 18:57:12,051 - omr_app - INFO - Created directories: static/uploads/c4e16805-5710-4f13-b3f7-949c7fdbdcb2, static/results/c4e16805-5710-4f13-b3f7-949c7fdbdcb2
+2025-04-25 18:57:12,054 - omr_app - INFO - Saved file to static/uploads/c4e16805-5710-4f13-b3f7-949c7fdbdcb2/b5be7633-d2bb-4e9f-8a69-58d6b13c43db.jpg
+2025-04-25 18:57:12,055 - omr_app - INFO - Processed answer key: []
+2025-04-25 18:57:12,957 - omr_app - INFO - Applied image enhancement
+2025-04-25 18:57:12,958 - omr_app - INFO - Starting OMR processing...
+2025-04-25 18:57:13,065 - omr_app - INFO - Processing completed in 0.11 seconds
+2025-04-25 18:57:13,065 - omr_app - INFO - OMR processing successful, detected 9 answers
+2025-04-25 18:57:13,066 - omr_app - INFO - Question 1: B, Correct: False, Confidence: 49
+2025-04-25 18:57:13,066 - omr_app - INFO - Question 2: Not marked
+2025-04-25 18:57:13,067 - omr_app - INFO - Question 3: A, Correct: False, Confidence: 62
+2025-04-25 18:57:13,067 - omr_app - INFO - Question 4: B, Correct: False, Confidence: 46
+2025-04-25 18:57:13,068 - omr_app - INFO - Question 5: C, Correct: False, Confidence: 55
+2025-04-25 18:57:13,068 - omr_app - INFO - Question 6: C, Correct: False, Confidence: 65
+2025-04-25 18:57:13,069 - omr_app - INFO - Question 7: B, Correct: False, Confidence: 58
+2025-04-25 18:57:13,069 - omr_app - INFO - Question 8: D, Correct: False, Confidence: 63
+2025-04-25 18:57:13,069 - omr_app - INFO - Question 9: Not marked
+2025-04-25 18:57:13,094 - omr_app - INFO - Successfully encoded result image, size: 423960
+2025-04-25 18:57:14,295 - omr_app - ERROR - Error using Gemini API: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-04-25 18:57:14,297 - omr_app - INFO - Generated Gemini analysis
+2025-04-25 18:57:14,298 - omr_app - INFO - Returning successful response with 9 answers
+2025-04-25 19:00:02,172 - omr_app - INFO - Received file: b5be7633-d2bb-4e9f-8a69-58d6b13c43db.jpg, size: 146141 bytes
+2025-04-25 19:00:02,173 - omr_app - INFO - Answer key provided: 2,0,2,1,2,2,2,2,2,1
+2025-04-25 19:00:02,174 - omr_app - INFO - Created directories: static/uploads/5236022b-7925-4a53-8019-3ef9a3834558, static/results/5236022b-7925-4a53-8019-3ef9a3834558
+2025-04-25 19:00:02,176 - omr_app - INFO - Saved file to static/uploads/5236022b-7925-4a53-8019-3ef9a3834558/b5be7633-d2bb-4e9f-8a69-58d6b13c43db.jpg
+2025-04-25 19:00:02,177 - omr_app - INFO - Processed answer key: []
+2025-04-25 19:00:03,015 - omr_app - INFO - Applied image enhancement
+2025-04-25 19:00:03,015 - omr_app - INFO - Starting OMR processing...
+2025-04-25 19:00:03,118 - omr_app - INFO - Processing completed in 0.10 seconds
+2025-04-25 19:00:03,119 - omr_app - INFO - OMR processing successful, detected 9 answers
+2025-04-25 19:00:03,120 - omr_app - INFO - Question 1: B, Correct: False, Confidence: 49
+2025-04-25 19:00:03,120 - omr_app - INFO - Question 2: Not marked
+2025-04-25 19:00:03,121 - omr_app - INFO - Question 3: A, Correct: False, Confidence: 62
+2025-04-25 19:00:03,121 - omr_app - INFO - Question 4: B, Correct: False, Confidence: 46
+2025-04-25 19:00:03,122 - omr_app - INFO - Question 5: C, Correct: False, Confidence: 55
+2025-04-25 19:00:03,122 - omr_app - INFO - Question 6: C, Correct: False, Confidence: 65
+2025-04-25 19:00:03,122 - omr_app - INFO - Question 7: B, Correct: False, Confidence: 58
+2025-04-25 19:00:03,122 - omr_app - INFO - Question 8: D, Correct: False, Confidence: 63
+2025-04-25 19:00:03,123 - omr_app - INFO - Question 9: Not marked
+2025-04-25 19:00:03,141 - omr_app - INFO - Successfully encoded result image, size: 423960
+2025-04-25 19:00:04,391 - omr_app - ERROR - Error using Gemini API: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-04-25 19:00:04,393 - omr_app - INFO - Generated Gemini analysis
+2025-04-25 19:00:04,393 - omr_app - INFO - Returning successful response with 9 answers
+2025-04-25 19:01:11,238 - omr_app - INFO - Received file: b5be7633-d2bb-4e9f-8a69-58d6b13c43db.jpg, size: 146141 bytes
+2025-04-25 19:01:11,239 - omr_app - INFO - Answer key provided: 2,0,2,1,2,2,2,2,2,1
+2025-04-25 19:01:11,240 - omr_app - INFO - Created directories: static/uploads/8ddce608-f20f-42cb-a784-7873baf44e14, static/results/8ddce608-f20f-42cb-a784-7873baf44e14
+2025-04-25 19:01:11,244 - omr_app - INFO - Saved file to static/uploads/8ddce608-f20f-42cb-a784-7873baf44e14/b5be7633-d2bb-4e9f-8a69-58d6b13c43db.jpg
+2025-04-25 19:01:11,244 - omr_app - INFO - Processed answer key: []
+2025-04-25 19:01:12,079 - omr_app - INFO - Applied image enhancement
+2025-04-25 19:01:12,079 - omr_app - INFO - Starting OMR processing...
+2025-04-25 19:01:12,183 - omr_app - INFO - Processing completed in 0.10 seconds
+2025-04-25 19:01:12,184 - omr_app - INFO - OMR processing successful, detected 9 answers
+2025-04-25 19:01:12,184 - omr_app - INFO - Question 1: B, Correct: False, Confidence: 49
+2025-04-25 19:01:12,184 - omr_app - INFO - Question 2: Not marked
+2025-04-25 19:01:12,185 - omr_app - INFO - Question 3: A, Correct: False, Confidence: 62
+2025-04-25 19:01:12,185 - omr_app - INFO - Question 4: B, Correct: False, Confidence: 46
+2025-04-25 19:01:12,185 - omr_app - INFO - Question 5: C, Correct: False, Confidence: 55
+2025-04-25 19:01:12,185 - omr_app - INFO - Question 6: C, Correct: False, Confidence: 65
+2025-04-25 19:01:12,185 - omr_app - INFO - Question 7: B, Correct: False, Confidence: 58
+2025-04-25 19:01:12,186 - omr_app - INFO - Question 8: D, Correct: False, Confidence: 63
+2025-04-25 19:01:12,186 - omr_app - INFO - Question 9: Not marked
+2025-04-25 19:01:12,200 - omr_app - INFO - Successfully encoded result image, size: 423960
+2025-04-25 19:01:13,413 - omr_app - ERROR - Error using Gemini API: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-04-25 19:01:13,414 - omr_app - INFO - Generated Gemini analysis
+2025-04-25 19:01:13,415 - omr_app - INFO - Returning successful response with 9 answers
+2025-04-25 19:01:54,724 - omr_app - INFO - Received file: b5be7633-d2bb-4e9f-8a69-58d6b13c43db.jpg, size: 146141 bytes
+2025-04-25 19:01:54,726 - omr_app - INFO - Answer key provided: 2,0,2,1,2,2,2,2,2,1
+2025-04-25 19:01:54,728 - omr_app - INFO - Created directories: static/uploads/91684c93-0c6a-4516-80c9-cfe572cabd62, static/results/91684c93-0c6a-4516-80c9-cfe572cabd62
+2025-04-25 19:01:54,747 - omr_app - INFO - Saved file to static/uploads/91684c93-0c6a-4516-80c9-cfe572cabd62/b5be7633-d2bb-4e9f-8a69-58d6b13c43db.jpg
+2025-04-25 19:01:54,748 - omr_app - INFO - Processed answer key: []
+2025-04-25 19:01:55,565 - omr_app - INFO - Applied image enhancement
+2025-04-25 19:01:55,566 - omr_app - INFO - Starting OMR processing...
+2025-04-25 19:01:55,669 - omr_app - INFO - Processing completed in 0.10 seconds
+2025-04-25 19:01:55,669 - omr_app - INFO - OMR processing successful, detected 9 answers
+2025-04-25 19:01:55,669 - omr_app - INFO - Question 1: B, Correct: False, Confidence: 49
+2025-04-25 19:01:55,670 - omr_app - INFO - Question 2: Not marked
+2025-04-25 19:01:55,670 - omr_app - INFO - Question 3: A, Correct: False, Confidence: 62
+2025-04-25 19:01:55,670 - omr_app - INFO - Question 4: B, Correct: False, Confidence: 46
+2025-04-25 19:01:55,671 - omr_app - INFO - Question 5: C, Correct: False, Confidence: 55
+2025-04-25 19:01:55,671 - omr_app - INFO - Question 6: C, Correct: False, Confidence: 65
+2025-04-25 19:01:55,671 - omr_app - INFO - Question 7: B, Correct: False, Confidence: 58
+2025-04-25 19:01:55,671 - omr_app - INFO - Question 8: D, Correct: False, Confidence: 63
+2025-04-25 19:01:55,671 - omr_app - INFO - Question 9: Not marked
+2025-04-25 19:01:55,685 - omr_app - INFO - Successfully encoded result image, size: 423960
+2025-04-25 19:01:56,937 - omr_app - ERROR - Error using Gemini API: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-04-25 19:01:56,956 - omr_app - INFO - Generated Gemini analysis
+2025-04-25 19:01:56,957 - omr_app - INFO - Returning successful response with 9 answers
+2025-04-25 19:05:09,302 - omr_app - INFO - Received file: b5be7633-d2bb-4e9f-8a69-58d6b13c43db.jpg, size: 146141 bytes
+2025-04-25 19:05:09,302 - omr_app - INFO - Answer key provided: 2,0,2,1,2,2,2,2,2,1
+2025-04-25 19:05:09,304 - omr_app - INFO - Created directories: static/uploads/ec81864e-6d72-455a-aa2a-36efd431518e, static/results/ec81864e-6d72-455a-aa2a-36efd431518e
+2025-04-25 19:05:09,307 - omr_app - INFO - Saved file to static/uploads/ec81864e-6d72-455a-aa2a-36efd431518e/b5be7633-d2bb-4e9f-8a69-58d6b13c43db.jpg
+2025-04-25 19:05:09,308 - omr_app - INFO - Processed answer key: []
+2025-04-25 19:05:10,038 - omr_app - INFO - Applied image enhancement
+2025-04-25 19:05:10,038 - omr_app - INFO - Starting OMR processing...
+2025-04-25 19:05:10,130 - omr_app - INFO - Processing completed in 0.09 seconds
+2025-04-25 19:05:10,130 - omr_app - INFO - OMR processing successful, detected 9 answers
+2025-04-25 19:05:10,131 - omr_app - INFO - Question 1: B, Correct: False, Confidence: 49
+2025-04-25 19:05:10,131 - omr_app - INFO - Question 2: Not marked
+2025-04-25 19:05:10,131 - omr_app - INFO - Question 3: A, Correct: False, Confidence: 62
+2025-04-25 19:05:10,132 - omr_app - INFO - Question 4: B, Correct: False, Confidence: 46
+2025-04-25 19:05:10,132 - omr_app - INFO - Question 5: C, Correct: False, Confidence: 55
+2025-04-25 19:05:10,132 - omr_app - INFO - Question 6: C, Correct: False, Confidence: 65
+2025-04-25 19:05:10,132 - omr_app - INFO - Question 7: B, Correct: False, Confidence: 58
+2025-04-25 19:05:10,133 - omr_app - INFO - Question 8: D, Correct: False, Confidence: 63
+2025-04-25 19:05:10,133 - omr_app - INFO - Question 9: Not marked
+2025-04-25 19:05:10,150 - omr_app - INFO - Successfully encoded result image, size: 423960
+2025-04-25 19:05:11,510 - omr_app - ERROR - Error using Gemini API: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-04-25 19:05:11,511 - omr_app - INFO - Generated Gemini analysis
+2025-04-25 19:05:11,512 - omr_app - INFO - Returning successful response with 9 answers
+2025-04-25 19:06:07,161 - omr_app - INFO - Received file: b5be7633-d2bb-4e9f-8a69-58d6b13c43db.jpg, size: 146141 bytes
+2025-04-25 19:06:07,162 - omr_app - INFO - Answer key provided: 2,0,2,1,2,2,2,2,2,1
+2025-04-25 19:06:07,163 - omr_app - INFO - Created directories: static/uploads/4f28b142-cdd3-464a-ae5a-7f508984611c, static/results/4f28b142-cdd3-464a-ae5a-7f508984611c
+2025-04-25 19:06:07,166 - omr_app - INFO - Saved file to static/uploads/4f28b142-cdd3-464a-ae5a-7f508984611c/b5be7633-d2bb-4e9f-8a69-58d6b13c43db.jpg
+2025-04-25 19:06:07,169 - omr_app - INFO - Processed answer key: []
+2025-04-25 19:06:08,076 - omr_app - INFO - Applied image enhancement
+2025-04-25 19:06:08,076 - omr_app - INFO - Starting OMR processing...
+2025-04-25 19:06:08,161 - omr_app - INFO - Processing completed in 0.08 seconds
+2025-04-25 19:06:08,162 - omr_app - INFO - OMR processing successful, detected 9 answers
+2025-04-25 19:06:08,162 - omr_app - INFO - Question 1: B, Correct: False, Confidence: 49
+2025-04-25 19:06:08,162 - omr_app - INFO - Question 2: Not marked
+2025-04-25 19:06:08,163 - omr_app - INFO - Question 3: A, Correct: False, Confidence: 62
+2025-04-25 19:06:08,163 - omr_app - INFO - Question 4: B, Correct: False, Confidence: 46
+2025-04-25 19:06:08,163 - omr_app - INFO - Question 5: C, Correct: False, Confidence: 55
+2025-04-25 19:06:08,163 - omr_app - INFO - Question 6: C, Correct: False, Confidence: 65
+2025-04-25 19:06:08,164 - omr_app - INFO - Question 7: B, Correct: False, Confidence: 58
+2025-04-25 19:06:08,164 - omr_app - INFO - Question 8: D, Correct: False, Confidence: 63
+2025-04-25 19:06:08,164 - omr_app - INFO - Question 9: Not marked
+2025-04-25 19:06:08,178 - omr_app - INFO - Successfully encoded result image, size: 423960
+2025-04-25 19:06:09,346 - omr_app - ERROR - Error using Gemini API: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-04-25 19:06:09,347 - omr_app - INFO - Generated Gemini analysis
+2025-04-25 19:06:09,348 - omr_app - INFO - Returning successful response with 9 answers
+2025-04-25 19:34:33,834 - omr_app - INFO - API call received: file=bea17711-18c0-4d3a-b230-20d60f86934e.jpg, answer_key=2,0,2,1,2,2,2,2,2,1, num_questions=10, num_options=4
+2025-04-25 19:35:38,977 - omr_app - INFO - API call received: file=bea17711-18c0-4d3a-b230-20d60f86934e.jpg, answer_key=2,0,2,1,2,2,2,2,2,1, num_questions=10, num_options=4
+2025-04-25 19:35:41,873 - omr_app - INFO - API call received: file=9e1a82a8-6cd5-4a7e-9160-e5324ecafa81.jpg, answer_key=2,0,2,1,2,2,2,2,2,1, num_questions=10, num_options=4
+2025-04-25 19:37:44,798 - omr_app - INFO - API call received: file=bea17711-18c0-4d3a-b230-20d60f86934e.jpg, answer_key=2,0,2,1,2,2,2,2,2,1, num_questions=10, num_options=4
+2025-04-25 19:37:44,909 - omr_app - INFO - API call received: file=9e1a82a8-6cd5-4a7e-9160-e5324ecafa81.jpg, answer_key=2,0,2,1,2,2,2,2,2,1, num_questions=10, num_options=4
+2025-04-25 19:37:47,798 - omr_app - INFO - API call received: file=bea17711-18c0-4d3a-b230-20d60f86934e.jpg, answer_key=2,0,2,1,2,2,2,2,2,1, num_questions=10, num_options=4
+2025-04-25 19:37:47,903 - omr_app - INFO - API call received: file=9e1a82a8-6cd5-4a7e-9160-e5324ecafa81.jpg, answer_key=2,0,2,1,2,2,2,2,2,1, num_questions=10, num_options=4
+2025-04-25 19:38:04,919 - omr_app - INFO - API call received: file=808aca8c-e9dc-4791-919c-638cac514f75.jpg, answer_key=2,0,2,1,2,2,2,2,2,1, num_questions=10, num_options=4
+2025-04-25 19:41:15,246 - omr_app - INFO - API call received: file=808aca8c-e9dc-4791-919c-638cac514f75.jpg, answer_key=2,0,2,1,2,2,2,2,2,1, num_questions=10, num_options=4
+2025-04-25 19:41:53,846 - omr_app - INFO - API call received: file=e37b96b5-c470-4a56-8eab-ff26adbdf70c.jpg, answer_key=2,0,2,1,2,2,2,2,2,1, num_questions=10, num_options=4
+2025-04-25 19:43:28,657 - omr_app - INFO - API call received: file=e37b96b5-c470-4a56-8eab-ff26adbdf70c.jpg, answer_key=2,0,2,1,2,2,2,2,2,1, num_questions=10, num_options=4
+2025-04-25 19:56:07,966 - omr_app - ERROR - Error using Gemini API: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-04-25 19:56:28,068 - omr_app - INFO - Saved and processed training sample: static/training/filled/c5a8190b-0232-48f4-b10b-f3647e886b6a_2025-04-23_032530.jpg
+2025-04-25 19:58:11,590 - omr_app - INFO - Received file: e37b96b5-c470-4a56-8eab-ff26adbdf70c.jpg, size: 67260 bytes
+2025-04-25 19:58:11,591 - omr_app - INFO - Answer key provided: None
+2025-04-25 19:58:11,592 - omr_app - INFO - Created directories: static/uploads/8d27ae18-0f06-48f1-8b89-eb4a09103bc3, static/results/8d27ae18-0f06-48f1-8b89-eb4a09103bc3
+2025-04-25 19:58:11,600 - omr_app - INFO - Saved file to static/uploads/8d27ae18-0f06-48f1-8b89-eb4a09103bc3/e37b96b5-c470-4a56-8eab-ff26adbdf70c.jpg
+2025-04-25 19:58:12,317 - omr_app - INFO - Applied image enhancement
+2025-04-25 19:58:12,317 - omr_app - INFO - Starting OMR processing...
+2025-04-25 19:58:12,388 - omr_app - INFO - Processing completed in 0.07 seconds
+2025-04-25 19:58:12,388 - omr_app - INFO - OMR processing successful, detected 10 answers
+2025-04-25 19:58:12,389 - omr_app - INFO - Question 1: B, Correct: False, Confidence: 62
+2025-04-25 19:58:12,389 - omr_app - INFO - Question 2: Not marked
+2025-04-25 19:58:12,389 - omr_app - INFO - Question 3: D, Correct: False, Confidence: 69
+2025-04-25 19:58:12,390 - omr_app - INFO - Question 4: A, Correct: False, Confidence: 59
+2025-04-25 19:58:12,390 - omr_app - INFO - Question 5: C, Correct: False, Confidence: 60
+2025-04-25 19:58:12,391 - omr_app - INFO - Question 6: B, Correct: False, Confidence: 59
+2025-04-25 19:58:12,391 - omr_app - INFO - Question 7: Not marked
+2025-04-25 19:58:12,391 - omr_app - INFO - Question 8: Not marked
+2025-04-25 19:58:12,391 - omr_app - INFO - Question 9: C, Correct: False, Confidence: 75
+2025-04-25 19:58:12,391 - omr_app - INFO - Question 10: B, Correct: False, Confidence: 71
+2025-04-25 19:58:12,407 - omr_app - INFO - Successfully encoded result image, size: 197748
+2025-04-25 19:58:13,200 - omr_app - ERROR - Error using Gemini API: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-04-25 19:58:13,202 - omr_app - INFO - Generated Gemini analysis
+2025-04-25 19:58:13,203 - omr_app - INFO - Returning successful response with 10 answers
+2025-04-25 20:06:05,581 - omr_app - INFO - Received file: a3625671-3922-454e-aa5c-ed8b034d8a70.jpg, size: 62897 bytes
+2025-04-25 20:06:05,583 - omr_app - INFO - Answer key provided: None
+2025-04-25 20:06:05,584 - omr_app - INFO - Created directories: static/uploads/2c537030-5343-4656-867c-efe945c97fc6, static/results/2c537030-5343-4656-867c-efe945c97fc6
+2025-04-25 20:06:05,588 - omr_app - INFO - Saved file to static/uploads/2c537030-5343-4656-867c-efe945c97fc6/a3625671-3922-454e-aa5c-ed8b034d8a70.jpg
+2025-04-25 20:06:06,386 - omr_app - INFO - Applied image enhancement
+2025-04-25 20:06:06,387 - omr_app - INFO - Starting OMR processing...
+2025-04-25 20:06:06,457 - omr_app - INFO - Processing completed in 0.07 seconds
+2025-04-25 20:06:06,458 - omr_app - INFO - OMR processing successful, detected 10 answers
+2025-04-25 20:06:06,458 - omr_app - INFO - Question 1: C, Correct: False, Confidence: 63
+2025-04-25 20:06:06,458 - omr_app - INFO - Question 2: B, Correct: False, Confidence: 63
+2025-04-25 20:06:06,458 - omr_app - INFO - Question 3: C, Correct: False, Confidence: 47
+2025-04-25 20:06:06,459 - omr_app - INFO - Question 4: A, Correct: False, Confidence: 75
+2025-04-25 20:06:06,459 - omr_app - INFO - Question 5: C, Correct: False, Confidence: 63
+2025-04-25 20:06:06,459 - omr_app - INFO - Question 6: Not marked
+2025-04-25 20:06:06,459 - omr_app - INFO - Question 7: B, Correct: False, Confidence: 56
+2025-04-25 20:06:06,459 - omr_app - INFO - Question 8: A, Correct: False, Confidence: 70
+2025-04-25 20:06:06,460 - omr_app - INFO - Question 9: D, Correct: False, Confidence: 59
+2025-04-25 20:06:06,460 - omr_app - INFO - Question 10: B, Correct: False, Confidence: 63
+2025-04-25 20:06:06,473 - omr_app - INFO - Successfully encoded result image, size: 192208
+2025-04-25 20:06:09,086 - omr_app - ERROR - Error using Gemini API: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-04-25 20:06:09,102 - omr_app - INFO - Generated Gemini analysis
+2025-04-25 20:06:09,102 - omr_app - INFO - Returning successful response with 10 answers
+2025-04-25 20:07:43,912 - omr_app - ERROR - Error using Gemini API: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-04-25 20:18:55,061 - omr_app - INFO - Received file: Handwritten_2025-04-24_022929.jpg, size: 339503 bytes
+2025-04-25 20:18:55,062 - omr_app - INFO - Answer key provided: None
+2025-04-25 20:18:55,064 - omr_app - INFO - Created directories: static/uploads/f7c54d24-96b5-41d0-997a-acb81e31addb, static/results/f7c54d24-96b5-41d0-997a-acb81e31addb
+2025-04-25 20:18:55,067 - omr_app - INFO - Saved file to static/uploads/f7c54d24-96b5-41d0-997a-acb81e31addb/Handwritten_2025-04-24_022929.jpg
+2025-04-25 20:18:59,679 - omr_app - INFO - Applied image enhancement
+2025-04-25 20:18:59,680 - omr_app - INFO - Starting OMR processing...
+2025-04-25 20:19:00,051 - omr_app - INFO - Processing completed in 0.37 seconds
+2025-04-25 20:19:00,052 - omr_app - INFO - OMR processing successful, detected 3 answers
+2025-04-25 20:19:00,052 - omr_app - INFO - Question 1: B, Correct: False, Confidence: 59
+2025-04-25 20:19:00,052 - omr_app - INFO - Question 2: B, Correct: False, Confidence: 53
+2025-04-25 20:19:00,052 - omr_app - INFO - Question 3: A, Correct: False, Confidence: 49
+2025-04-25 20:19:00,070 - omr_app - INFO - Successfully encoded result image, size: 477936
+2025-04-25 20:19:03,769 - omr_app - ERROR - Error using Gemini API: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-04-25 20:19:03,770 - omr_app - INFO - Generated Gemini analysis
+2025-04-25 20:19:03,771 - omr_app - INFO - Returning successful response with 3 answers
+2025-04-25 21:08:16,226 - omr_app - ERROR - Error using Gemini API: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-04-25 21:08:17,989 - omr_app - ERROR - Error using Gemini API: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-04-25 21:08:19,782 - omr_app - ERROR - Error using Gemini API: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-04-25 21:08:21,682 - omr_app - ERROR - Error using Gemini API: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-04-26 01:16:20,758 - omr_app - INFO - Saved and processed training sample: static/training/filled/c79b30a8-80ba-4bda-9388-514c83bdbfdf_Handwritten_2025-04-24_022929.jpg
+2025-04-26 01:18:03,640 - omr_app - INFO - Saved and processed training sample: static/training/filled/7a6cdaf1-74a6-423c-a7cc-8a14bb9b8081_Screenshot 2025-04-25 023942.png
+2025-04-26 01:18:27,571 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/f3bbc153-61ec-4dbc-bd74-d33ad88a169b_mcq_template_1.jpg
+2025-04-26 01:18:27,633 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/d38f83e3-7b36-4828-972f-1d15243b3669_mcq_template_2.jpg
+2025-04-26 01:18:27,681 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/5418b717-bd79-4afc-8f76-3dbee24e7af8_mcq_template_3.jpg
+2025-04-26 01:18:27,728 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/f64f80eb-cb1b-4dfa-87dc-10c5ec868a7f_mcq_template_4.jpg
+2025-04-26 01:18:27,775 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/8ebd9bef-7517-4153-a823-d34fc843c832_mcq_template_5.jpg
+2025-04-26 01:18:27,819 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/5a067c9a-7022-4ed5-b4eb-a1f2b3371a85_mcq_template_6.jpg
+2025-04-26 01:18:27,861 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/85de19fc-42ac-4ddd-9b34-e99887849ca3_mcq_template_7.jpg
+2025-04-26 01:18:27,906 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/1f18fa89-64d2-4194-a3f3-eeae94b7bd0b_mcq_template_8.jpg
+2025-04-26 01:18:27,950 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/18545cbf-0522-4973-b158-c7a9c61b3750_mcq_template_9.jpg
+2025-04-26 01:18:27,990 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/d49e878d-5df6-4b29-98c8-d5b2433b7215_mcq_template_10.jpg
+2025-04-26 01:18:28,033 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/b2872e1b-4803-4c4f-973b-9483f9b1ac17_mcq_template_11.jpg
+2025-04-26 01:18:28,071 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/97d8712d-1149-43e8-a1b8-a17244816747_mcq_template_12.jpg
+2025-04-26 01:18:28,113 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/665108b1-7192-44ad-8a8b-ea6842b5f41b_mcq_template_13.jpg
+2025-04-26 01:18:28,163 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/a4bbbb56-30e2-4bd4-bbd7-8c7185fe0732_mcq_template_14.jpg
+2025-04-26 01:18:28,212 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/7c11d736-cf8f-47cf-91cd-f64972ce538a_mcq_template_15.jpg
+2025-04-26 01:18:28,253 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/f3ceb35e-d717-4d02-b4a1-f5ddee9e1243_mcq_template_16.jpg
+2025-04-26 01:18:28,285 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/ed80ca04-ff56-4b3e-a196-2e779dbd50ac_mcq_template_17.jpg
+2025-04-26 01:18:28,317 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/46e01afd-d59b-47bb-a43c-7d4de44179a1_mcq_template_18.jpg
+2025-04-26 01:18:28,346 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/79913f25-c66d-4f94-b0f4-07c78525c62c_mcq_template_19.jpg
+2025-04-26 01:18:28,374 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/5ea591be-cd79-4b0d-b8d2-096ea9545727_mcq_template_20.jpg
+2025-04-26 01:18:28,402 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/3704efd9-b15b-4c49-95f7-e16bf1dda01c_mcq_template_21.jpg
+2025-04-26 01:18:28,430 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/dc0f541a-0cd1-49da-996a-d764b7132065_mcq_template_22.jpg
+2025-04-26 01:18:28,458 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/3d7415f3-b5ac-4e95-950b-e0c9bb047531_mcq_template_23.jpg
+2025-04-26 01:18:28,485 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/0c4f9150-b62d-4475-9a56-a55604e96d08_mcq_template_24.jpg
+2025-04-26 01:18:28,514 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/24a610a8-98ac-4c12-92c4-f51d4df5d149_mcq_template_25.jpg
+2025-04-26 01:18:28,545 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/1ffd4fc4-c519-4d3b-82e2-26bd7ec4bd33_mcq_template_26.jpg
+2025-04-26 01:18:28,578 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/ec475253-4b34-4cb9-91f9-64bb9bc0f7ba_mcq_template_27.jpg
+2025-04-26 01:18:28,615 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/9d889991-9501-487e-b065-a755dea80a93_mcq_template_28.jpg
+2025-04-26 01:18:28,646 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/5b097743-111b-4aba-85cf-1cfcbe14c25e_mcq_template_29.jpg
+2025-04-26 01:18:28,678 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/42ca0c05-1dc9-47ef-a0d6-a8e31d6451c0_mcq_template_30.jpg
+2025-04-26 01:18:28,709 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/51a592e1-66fb-4873-90b5-bcc13ba12f95_mcq_template_31.jpg
+2025-04-26 01:18:28,743 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/ed176edc-4c96-4727-ad20-be562f516cdc_mcq_template_32.jpg
+2025-04-26 01:18:28,775 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/4cde3654-e714-4b0f-9220-28c56b20e36d_mcq_template_33.jpg
+2025-04-26 01:18:28,809 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/22feb17e-cf20-4b2c-aa62-887896968721_mcq_template_34.jpg
+2025-04-26 01:18:28,849 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/a43c7afd-82a2-44ce-af5a-02f81b508f6c_mcq_template_35.jpg
+2025-04-26 01:18:28,885 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/59102ead-73a3-461f-ba46-ec1cc61bd921_mcq_template_36.jpg
+2025-04-26 01:18:28,917 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/01b991a6-c455-4c3f-9c1e-d813bd49205f_mcq_template_37.jpg
+2025-04-26 01:18:28,949 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/08c9f158-423d-4f04-a1e9-75f2100b65bd_mcq_template_38.jpg
+2025-04-26 01:18:28,977 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/e63cdaa5-ffcc-450c-8b63-8212cfdbf522_mcq_template_39.jpg
+2025-04-26 01:18:29,007 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/0c870ac6-df7a-4e5d-bb3b-d072f4c2f07b_mcq_template_40.jpg
+2025-04-26 01:18:29,036 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/1c47e63b-756c-4302-9fbc-3ae661a190af_mcq_template_41.jpg
+2025-04-26 01:18:29,064 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/6367a602-ad1b-4dc0-b5fe-42ecca2ce353_mcq_template_42.jpg
+2025-04-26 01:18:29,099 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/42967604-a1f4-43a8-a601-84ec57b784b4_mcq_template_43.jpg
+2025-04-26 01:18:29,134 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/5996d157-b62b-49ae-9935-c81d5768bbb0_mcq_template_44.jpg
+2025-04-26 01:18:29,171 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/4b37188e-68d9-4614-bf79-d63e6a788d84_mcq_template_45.jpg
+2025-04-26 01:18:29,205 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/76e2fad5-fc12-4960-ae87-276c0406d4f5_mcq_template_46.jpg
+2025-04-26 01:18:29,238 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/1616b3cf-ff13-4841-b775-7f23dff2aea7_mcq_template_47.jpg
+2025-04-26 01:18:29,266 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/4294014f-fab8-4e29-b6a9-6e117daef49d_mcq_template_48.jpg
+2025-04-26 01:18:29,295 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/4434f72a-9c19-4aac-af72-493669799f54_mcq_template_49.jpg
+2025-04-26 01:18:29,325 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/7b2f75c5-ba51-4b6d-bafb-4c4157d28993_mcq_template_50.jpg
+2025-04-26 01:18:29,354 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/6956627d-3222-426d-b8b1-b2e4382bc907_mcq_template_51.jpg
+2025-04-26 01:18:29,382 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/2edfd619-fbca-4e5b-8e7e-0253107dbed5_mcq_template_52.jpg
+2025-04-26 01:18:29,411 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/e4214bd2-e423-41bf-9fa0-c14fb4daf32e_mcq_template_53.jpg
+2025-04-26 01:18:29,443 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/dc197a30-d9fc-46d7-84b3-1c87aaa0dcf6_mcq_template_54.jpg
+2025-04-26 01:18:29,473 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/9677da6b-b5bb-4e52-93ea-7f4dd682e0f3_mcq_template_55.jpg
+2025-04-26 01:18:29,504 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/9af4ae4d-4266-4d93-b78c-e23c836474b0_mcq_template_56.jpg
+2025-04-26 01:18:29,533 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/b520715d-4e75-4333-b401-6c0a8808dd77_mcq_template_57.jpg
+2025-04-26 01:18:29,561 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/e2102581-c8db-44e2-a693-7aa33b0e3c5c_mcq_template_58.jpg
+2025-04-26 01:18:29,592 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/ed160b14-1715-400b-92ac-b11407353cb9_mcq_template_59.jpg
+2025-04-26 01:18:29,623 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/4fadc158-845c-4fa3-a306-84463f3b727e_mcq_template_60.jpg
+2025-04-26 01:18:29,653 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/d83dbc6e-1c9b-442f-8b7c-24607cde5978_mcq_template_61.jpg
+2025-04-26 01:18:29,686 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/b7ab9e40-37f3-42ff-bef0-9c4efb5a18c6_mcq_template_62.jpg
+2025-04-26 01:18:29,714 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/73b1e434-169f-441c-8da9-aa0e4168f440_mcq_template_63.jpg
+2025-04-26 01:18:29,742 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/433521a0-8569-4cb8-b609-63593e4d71a5_mcq_template_64.jpg
+2025-04-26 01:18:29,773 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/396d82c6-cc21-4515-86ab-02e5f961529d_mcq_template_65.jpg
+2025-04-26 01:18:29,829 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/ea6264f6-f863-47a1-b787-b174c00a76f0_mcq_template_66.jpg
+2025-04-26 01:18:29,855 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/ec73342a-9652-4443-b776-4e560d15a369_mcq_template_67.jpg
+2025-04-26 01:18:29,883 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/7f35962f-5242-4222-8fb5-1c11705d7e4e_mcq_template_68.jpg
+2025-04-26 01:18:29,911 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/23781d04-43ee-47a4-97a1-96abb9627958_mcq_template_69.jpg
+2025-04-26 01:18:29,937 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/89ac89ec-d66f-4bd4-9b96-f5cbe15a57b7_mcq_template_70.jpg
+2025-04-26 01:18:29,966 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/a8a676e3-e4da-4a01-8a4d-9345c439d720_mcq_template_71.jpg
+2025-04-26 01:18:29,996 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/2c215ec3-bf73-4449-8987-ed60d9d8dff0_mcq_template_72.jpg
+2025-04-26 01:18:30,032 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/eaccd8ee-8c46-4ac5-992d-e8f91d9c2e17_mcq_template_73.jpg
+2025-04-26 01:18:30,066 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/e307852c-10ce-4ea2-bf70-ca6447d2258a_mcq_template_74.jpg
+2025-04-26 01:18:30,101 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/8dfc41c5-072b-4a4f-b08f-0f9ad8cdd9ca_mcq_template_75.jpg
+2025-04-26 01:18:30,132 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/1636853c-0f98-4191-9ce0-017d45944280_mcq_template_76.jpg
+2025-04-26 01:18:30,162 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/eba62177-eed6-420c-9e73-c72ef220013d_mcq_template_77.jpg
+2025-04-26 01:18:30,197 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/071b37f4-1389-43ba-b364-1dd57f55db32_mcq_template_78.jpg
+2025-04-26 01:18:30,227 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/e940e7d7-53c6-4376-8005-7b725f329337_mcq_template_79.jpg
+2025-04-26 01:18:30,257 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/c6fdcf7d-768a-4901-be64-ebcc8ef152ba_mcq_template_80.jpg
+2025-04-26 01:18:30,288 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/92427e83-76cb-4f35-b918-ff4869630418_mcq_template_81.jpg
+2025-04-26 01:18:30,316 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/b6c437fb-f7c8-4166-8d62-7641e9f0d82f_mcq_template_82.jpg
+2025-04-26 01:18:30,347 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/bf6f1830-68d7-43c0-acc7-1c52898a65fc_mcq_template_83.jpg
+2025-04-26 01:18:30,379 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/15195bd9-16f3-4e94-80d6-240b5a9076c1_mcq_template_84.jpg
+2025-04-26 01:18:30,411 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/815d2fce-45a4-4c5c-92bf-771eac6d6c22_mcq_template_85.jpg
+2025-04-26 01:18:30,444 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/de7aee1c-6183-479d-91f2-96da9dce08e3_mcq_template_86.jpg
+2025-04-26 01:18:30,486 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/349ad6c0-ba93-4000-9478-37dd6c09855b_mcq_template_87.jpg
+2025-04-26 01:18:30,522 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/3e2255d1-cdce-4b54-82fd-81ae2e61975f_mcq_template_88.jpg
+2025-04-26 01:18:30,556 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/ef6becc5-7284-4339-95e2-eed001e52428_mcq_template_89.jpg
+2025-04-26 01:18:30,590 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/5c741067-14bf-41e3-beb4-48cfb43c9c10_mcq_template_90.jpg
+2025-04-26 01:18:30,624 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/c98f6db8-cd6f-41bf-ad9d-91374ca176cb_mcq_template_91.jpg
+2025-04-26 01:18:30,653 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/90e7ce44-2e7c-4a86-8df2-b907106ab6d6_mcq_template_92.jpg
+2025-04-26 01:18:30,685 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/78706de2-8e42-488d-93ed-37cdbe2609be_mcq_template_93.jpg
+2025-04-26 01:18:30,712 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/36cadf87-a363-4f25-82a1-935593fe64db_mcq_template_94.jpg
+2025-04-26 01:18:30,742 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/a537eca4-1560-4da8-b004-b479997a058d_mcq_template_95.jpg
+2025-04-26 01:18:30,771 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/9dfec8e3-8ba8-478f-a0d6-406aee1582bf_mcq_template_96.jpg
+2025-04-26 01:18:30,798 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/b16f3e90-80e8-4f32-9dc9-fb8b4610946f_mcq_template_97.jpg
+2025-04-26 01:18:30,827 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/d597f4e3-b6f8-49a1-9c4b-e1b61f6a378d_mcq_template_98.jpg
+2025-04-26 01:18:30,858 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/b24dfbbb-6c40-4847-ab99-1edc0b8bc029_mcq_template_99.jpg
+2025-04-26 01:18:30,887 - omr_app - INFO - Saved and processed training sample: static/training/unfilled/0cd52f2e-e596-422c-a544-5993850aa928_mcq_template_100.jpg
+2025-04-26 01:21:04,886 - omr_app - ERROR - Error using Gemini API: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-04-26 01:21:33,589 - omr_app - ERROR - Error using Gemini API: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+2025-04-26 01:26:25,255 - omr_app - ERROR - Error using Gemini API: Invalid format specifier ' 5, "detected": "B", "should_be": "C", "confidence": 0.85' for object of type 'str'
+2025-04-26 01:27:03,653 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:27:03,792 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:28:09,721 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:28:09,843 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:29:16,779 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:29:16,890 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:29:53,228 - omr_app - ERROR - Error using Gemini API: Invalid format specifier ' 5, "detected": "B", "should_be": "C", "confidence": 0.85' for object of type 'str'
+2025-04-26 01:30:34,375 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:30:38,145 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:30:38,263 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:31:01,367 - omr_app - ERROR - Error using Gemini API: Invalid format specifier ' 5, "detected": "B", "should_be": "C", "confidence": 0.85' for object of type 'str'
+2025-04-26 01:31:53,397 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:31:53,537 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:32:09,257 - omr_app - ERROR - Error calling Gemini API: Unknown field for GenerateContentRequest: timeout
+2025-04-26 01:32:29,681 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:32:29,831 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:32:48,323 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:32:48,440 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:33:09,360 - omr_app - INFO - Gemini detected 1 possible discrepancies in OMR detection
+2025-04-26 01:34:24,864 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:34:24,983 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:34:41,894 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:34:42,023 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:35:10,797 - omr_app - INFO - Generated Gemini analysis with 2373 characters
+2025-04-26 01:37:04,371 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:37:04,521 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:37:24,179 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:37:24,339 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:37:39,707 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:37:39,847 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:38:02,125 - omr_app - INFO - Generated Gemini analysis with 2134 characters
+2025-04-26 01:38:47,111 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:38:50,706 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:38:50,830 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:39:00,410 - omr_app - INFO - Generated Gemini analysis with 2309 characters
+2025-04-26 01:39:19,506 - omr_app - INFO - Generated Gemini analysis with 2143 characters
+2025-04-26 01:40:13,681 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:40:13,826 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:40:29,117 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:40:29,240 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:40:50,759 - omr_app - INFO - Generated Gemini analysis with 1906 characters
+2025-04-26 01:41:31,988 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:41:32,106 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:43:56,407 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:43:56,543 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:44:23,786 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:44:23,913 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:44:38,328 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:44:38,483 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:45:51,433 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:45:51,569 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:50:42,524 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:50:46,403 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 01:50:46,511 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 02:35:35,434 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 02:35:39,730 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 02:35:39,898 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 02:59:01,789 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 02:59:01,915 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 02:59:46,988 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 02:59:47,071 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 03:00:41,723 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 03:00:41,809 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 03:01:00,910 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 03:01:00,999 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 03:01:10,280 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 03:01:10,377 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 03:04:13,256 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 03:04:13,356 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 03:04:33,146 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 03:04:33,234 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 03:04:50,783 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 03:04:50,875 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 03:08:11,957 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 03:08:12,051 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 03:18:38,586 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 03:18:38,717 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 03:24:10,362 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 03:24:10,451 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 03:37:02,072 - omr_app - INFO - Generated Gemini analysis with 2668 characters
+2025-04-26 04:05:33,151 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 04:05:36,219 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 04:05:36,361 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 04:09:16,948 - omr_app - INFO - Received file: d2ebb9ab-a148-48f6-b10c-edb1494e90e5.jpg, size: 58546 bytes
+2025-04-26 04:09:16,948 - omr_app - INFO - Answer key provided: CACBCCCCCB
+2025-04-26 04:09:16,949 - omr_app - INFO - Created directories: static/uploads/e72c3ce1-65eb-48b0-b62a-af9a329c1232, static/results/e72c3ce1-65eb-48b0-b62a-af9a329c1232
+2025-04-26 04:09:16,952 - omr_app - INFO - Saved file to static/uploads/e72c3ce1-65eb-48b0-b62a-af9a329c1232/d2ebb9ab-a148-48f6-b10c-edb1494e90e5.jpg
+2025-04-26 04:09:16,952 - omr_app - INFO - Processed answer key: [2, 0, 2, 1, 2, 2, 2, 2, 2, 1]
+2025-04-26 04:09:17,675 - omr_app - INFO - Applied image enhancement
+2025-04-26 04:09:17,675 - omr_app - INFO - Starting OMR processing...
+2025-04-26 04:09:17,750 - omr_app - INFO - Processing completed in 0.07 seconds
+2025-04-26 04:09:17,750 - omr_app - INFO - OMR processing successful, detected 10 answers
+2025-04-26 04:09:17,751 - omr_app - INFO - Question 1: B, Correct: False, Confidence: 46
+2025-04-26 04:09:17,751 - omr_app - INFO - Question 2: B, Correct: False, Confidence: 68
+2025-04-26 04:09:17,751 - omr_app - INFO - Question 3: A, Correct: False, Confidence: 67
+2025-04-26 04:09:17,752 - omr_app - INFO - Question 4: C, Correct: False, Confidence: 57
+2025-04-26 04:09:17,752 - omr_app - INFO - Question 5: B, Correct: False, Confidence: 67
+2025-04-26 04:09:17,752 - omr_app - INFO - Question 6: Not marked
+2025-04-26 04:09:17,753 - omr_app - INFO - Question 7: Not marked
+2025-04-26 04:09:17,753 - omr_app - INFO - Question 8: A, Correct: False, Confidence: 71
+2025-04-26 04:09:17,753 - omr_app - INFO - Question 9: Not marked
+2025-04-26 04:09:17,754 - omr_app - INFO - Question 10: A, Correct: False, Confidence: 71
+2025-04-26 04:09:17,768 - omr_app - INFO - Successfully encoded result image, size: 194472
+2025-04-26 04:09:23,361 - omr_app - INFO - Generated Gemini analysis with 2940 characters
+2025-04-26 04:09:23,362 - omr_app - INFO - Generated Gemini analysis
+2025-04-26 04:09:23,363 - omr_app - INFO - Returning successful response with 10 answers
+2025-04-26 04:09:45,288 - omr_app - INFO - Received file: d2ebb9ab-a148-48f6-b10c-edb1494e90e5.jpg, size: 58546 bytes
+2025-04-26 04:09:45,289 - omr_app - INFO - Answer key provided: CACBCCCCCB
+2025-04-26 04:09:45,290 - omr_app - INFO - Created directories: static/uploads/02b1ebb5-4dda-4438-a23f-e395fd552747, static/results/02b1ebb5-4dda-4438-a23f-e395fd552747
+2025-04-26 04:09:45,299 - omr_app - INFO - Saved file to static/uploads/02b1ebb5-4dda-4438-a23f-e395fd552747/d2ebb9ab-a148-48f6-b10c-edb1494e90e5.jpg
+2025-04-26 04:09:45,300 - omr_app - INFO - Processed answer key: [2, 0, 2, 1, 2, 2, 2, 2, 2, 1]
+2025-04-26 04:09:46,041 - omr_app - INFO - Applied image enhancement
+2025-04-26 04:09:46,042 - omr_app - INFO - Starting OMR processing...
+2025-04-26 04:09:46,117 - omr_app - INFO - Processing completed in 0.08 seconds
+2025-04-26 04:09:46,118 - omr_app - INFO - OMR processing successful, detected 10 answers
+2025-04-26 04:09:46,118 - omr_app - INFO - Question 1: B, Correct: False, Confidence: 46
+2025-04-26 04:09:46,118 - omr_app - INFO - Question 2: B, Correct: False, Confidence: 68
+2025-04-26 04:09:46,119 - omr_app - INFO - Question 3: A, Correct: False, Confidence: 67
+2025-04-26 04:09:46,119 - omr_app - INFO - Question 4: C, Correct: False, Confidence: 57
+2025-04-26 04:09:46,119 - omr_app - INFO - Question 5: B, Correct: False, Confidence: 67
+2025-04-26 04:09:46,119 - omr_app - INFO - Question 6: Not marked
+2025-04-26 04:09:46,120 - omr_app - INFO - Question 7: Not marked
+2025-04-26 04:09:46,120 - omr_app - INFO - Question 8: A, Correct: False, Confidence: 71
+2025-04-26 04:09:46,120 - omr_app - INFO - Question 9: Not marked
+2025-04-26 04:09:46,121 - omr_app - INFO - Question 10: A, Correct: False, Confidence: 71
+2025-04-26 04:09:46,136 - omr_app - INFO - Successfully encoded result image, size: 194472
+2025-04-26 04:09:51,124 - omr_app - INFO - Generated Gemini analysis with 2695 characters
+2025-04-26 04:09:51,125 - omr_app - INFO - Generated Gemini analysis
+2025-04-26 04:09:51,125 - omr_app - INFO - Returning successful response with 10 answers
+2025-04-26 04:10:38,971 - omr_app - INFO - Received file: d2ebb9ab-a148-48f6-b10c-edb1494e90e5.jpg, size: 58546 bytes
+2025-04-26 04:10:38,972 - omr_app - INFO - Answer key provided: CACBCCCCCB
+2025-04-26 04:10:38,973 - omr_app - INFO - Created directories: static/uploads/e4d70fae-e144-4b40-9ca2-f25ea09ce516, static/results/e4d70fae-e144-4b40-9ca2-f25ea09ce516
+2025-04-26 04:10:38,975 - omr_app - INFO - Saved file to static/uploads/e4d70fae-e144-4b40-9ca2-f25ea09ce516/d2ebb9ab-a148-48f6-b10c-edb1494e90e5.jpg
+2025-04-26 04:10:38,976 - omr_app - INFO - Processed answer key: [2, 0, 2, 1, 2, 2, 2, 2, 2, 1]
+2025-04-26 04:10:39,786 - omr_app - INFO - Applied image enhancement
+2025-04-26 04:10:39,787 - omr_app - INFO - Starting OMR processing...
+2025-04-26 04:10:39,862 - omr_app - INFO - Processing completed in 0.08 seconds
+2025-04-26 04:10:39,863 - omr_app - INFO - OMR processing successful, detected 10 answers
+2025-04-26 04:10:39,863 - omr_app - INFO - Question 1: B, Correct: False, Confidence: 46
+2025-04-26 04:10:39,864 - omr_app - INFO - Question 2: B, Correct: False, Confidence: 68
+2025-04-26 04:10:39,864 - omr_app - INFO - Question 3: A, Correct: False, Confidence: 67
+2025-04-26 04:10:39,865 - omr_app - INFO - Question 4: C, Correct: False, Confidence: 57
+2025-04-26 04:10:39,867 - omr_app - INFO - Question 5: B, Correct: False, Confidence: 67
+2025-04-26 04:10:39,867 - omr_app - INFO - Question 6: Not marked
+2025-04-26 04:10:39,868 - omr_app - INFO - Question 7: Not marked
+2025-04-26 04:10:39,868 - omr_app - INFO - Question 8: A, Correct: False, Confidence: 71
+2025-04-26 04:10:39,869 - omr_app - INFO - Question 9: Not marked
+2025-04-26 04:10:39,870 - omr_app - INFO - Question 10: A, Correct: False, Confidence: 71
+2025-04-26 04:10:39,882 - omr_app - INFO - Successfully encoded result image, size: 194472
+2025-04-26 04:10:45,049 - omr_app - INFO - Generated Gemini analysis with 2841 characters
+2025-04-26 04:10:45,050 - omr_app - INFO - Generated Gemini analysis
+2025-04-26 04:10:45,051 - omr_app - INFO - Returning successful response with 10 answers
+2025-04-26 04:12:34,891 - omr_app - INFO - Received file: d2ebb9ab-a148-48f6-b10c-edb1494e90e5.jpg, size: 58546 bytes
+2025-04-26 04:12:34,892 - omr_app - INFO - Answer key provided: CACBCCCCCB
+2025-04-26 04:12:34,893 - omr_app - INFO - Created directories: static/uploads/e52b4479-6458-449e-ad3b-c536db824c12, static/results/e52b4479-6458-449e-ad3b-c536db824c12
+2025-04-26 04:12:34,895 - omr_app - INFO - Saved file to static/uploads/e52b4479-6458-449e-ad3b-c536db824c12/d2ebb9ab-a148-48f6-b10c-edb1494e90e5.jpg
+2025-04-26 04:12:34,896 - omr_app - INFO - Processed answer key: [2, 0, 2, 1, 2, 2, 2, 2, 2, 1]
+2025-04-26 04:12:35,649 - omr_app - INFO - Applied image enhancement
+2025-04-26 04:12:35,649 - omr_app - INFO - Starting OMR processing...
+2025-04-26 04:12:35,725 - omr_app - INFO - Processing completed in 0.08 seconds
+2025-04-26 04:12:35,725 - omr_app - INFO - OMR processing successful, detected 10 answers
+2025-04-26 04:12:35,726 - omr_app - INFO - Question 1: B, Correct: False, Confidence: 46
+2025-04-26 04:12:35,726 - omr_app - INFO - Question 2: B, Correct: False, Confidence: 68
+2025-04-26 04:12:35,726 - omr_app - INFO - Question 3: A, Correct: False, Confidence: 67
+2025-04-26 04:12:35,727 - omr_app - INFO - Question 4: C, Correct: False, Confidence: 57
+2025-04-26 04:12:35,727 - omr_app - INFO - Question 5: B, Correct: False, Confidence: 67
+2025-04-26 04:12:35,727 - omr_app - INFO - Question 6: Not marked
+2025-04-26 04:12:35,727 - omr_app - INFO - Question 7: Not marked
+2025-04-26 04:12:35,728 - omr_app - INFO - Question 8: A, Correct: False, Confidence: 71
+2025-04-26 04:12:35,728 - omr_app - INFO - Question 9: Not marked
+2025-04-26 04:12:35,728 - omr_app - INFO - Question 10: A, Correct: False, Confidence: 71
+2025-04-26 04:12:35,743 - omr_app - INFO - Successfully encoded result image, size: 194472
+2025-04-26 04:12:40,459 - omr_app - INFO - Generated Gemini analysis with 2304 characters
+2025-04-26 04:12:40,460 - omr_app - INFO - Generated Gemini analysis
+2025-04-26 04:12:40,460 - omr_app - INFO - Returning successful response with 10 answers
+2025-04-26 04:15:56,188 - omr_app - INFO - Received file: bea17711-18c0-4d3a-b230-20d60f86934e.jpg, size: 59996 bytes
+2025-04-26 04:15:56,189 - omr_app - INFO - Answer key provided: CACBCCCCCB
+2025-04-26 04:15:56,189 - omr_app - INFO - Created directories: static/uploads/010a464b-4bc9-4c59-a58d-003d26c69350, static/results/010a464b-4bc9-4c59-a58d-003d26c69350
+2025-04-26 04:15:56,191 - omr_app - INFO - Saved file to static/uploads/010a464b-4bc9-4c59-a58d-003d26c69350/bea17711-18c0-4d3a-b230-20d60f86934e.jpg
+2025-04-26 04:15:56,192 - omr_app - INFO - Processed answer key: [2, 0, 2, 1, 2, 2, 2, 2, 2, 1]
+2025-04-26 04:15:56,957 - omr_app - INFO - Applied image enhancement
+2025-04-26 04:15:56,958 - omr_app - INFO - Starting OMR processing...
+2025-04-26 04:15:57,029 - omr_app - INFO - Processing completed in 0.07 seconds
+2025-04-26 04:15:57,029 - omr_app - INFO - OMR processing successful, detected 10 answers
+2025-04-26 04:15:57,030 - omr_app - INFO - Question 1: A, Correct: False, Confidence: 48
+2025-04-26 04:15:57,031 - omr_app - INFO - Question 2: A, Correct: True, Confidence: 69
+2025-04-26 04:15:57,031 - omr_app - INFO - Question 3: Not marked
+2025-04-26 04:15:57,032 - omr_app - INFO - Question 4: Not marked
+2025-04-26 04:15:57,032 - omr_app - INFO - Question 5: A, Correct: False, Confidence: 71
+2025-04-26 04:15:57,033 - omr_app - INFO - Question 6: C, Correct: True, Confidence: 62
+2025-04-26 04:15:57,033 - omr_app - INFO - Question 7: C, Correct: True, Confidence: 78
+2025-04-26 04:15:57,034 - omr_app - INFO - Question 8: A, Correct: False, Confidence: 45
+2025-04-26 04:15:57,036 - omr_app - INFO - Question 9: Not marked
+2025-04-26 04:15:57,036 - omr_app - INFO - Question 10: B, Correct: True, Confidence: 60
+2025-04-26 04:15:57,048 - omr_app - INFO - Successfully encoded result image, size: 193492
+2025-04-26 04:16:03,072 - omr_app - INFO - Generated Gemini analysis with 3075 characters
+2025-04-26 04:16:03,072 - omr_app - INFO - Generated Gemini analysis
+2025-04-26 04:16:03,073 - omr_app - INFO - Returning successful response with 10 answers
+2025-04-26 04:17:57,211 - omr_app - INFO - Received file: bea17711-18c0-4d3a-b230-20d60f86934e.jpg, size: 59996 bytes
+2025-04-26 04:17:57,212 - omr_app - INFO - Answer key provided: CACBCCCCCB
+2025-04-26 04:17:57,213 - omr_app - INFO - Created directories: static/uploads/c6d175fe-1c44-459f-bd13-2ff96264e31b, static/results/c6d175fe-1c44-459f-bd13-2ff96264e31b
+2025-04-26 04:17:57,215 - omr_app - INFO - Saved file to static/uploads/c6d175fe-1c44-459f-bd13-2ff96264e31b/bea17711-18c0-4d3a-b230-20d60f86934e.jpg
+2025-04-26 04:17:57,215 - omr_app - INFO - Processed answer key: [2, 0, 2, 1, 2, 2, 2, 2, 2, 1]
+2025-04-26 04:17:57,921 - omr_app - INFO - Applied image enhancement
+2025-04-26 04:17:57,921 - omr_app - INFO - Starting OMR processing...
+2025-04-26 04:17:57,986 - omr_app - INFO - Processing completed in 0.06 seconds
+2025-04-26 04:17:57,986 - omr_app - INFO - OMR processing successful, detected 10 answers
+2025-04-26 04:17:57,987 - omr_app - INFO - Question 1: A, Correct: False, Confidence: 48
+2025-04-26 04:17:57,987 - omr_app - INFO - Question 2: A, Correct: True, Confidence: 69
+2025-04-26 04:17:57,987 - omr_app - INFO - Question 3: Not marked
+2025-04-26 04:17:57,987 - omr_app - INFO - Question 4: Not marked
+2025-04-26 04:17:57,987 - omr_app - INFO - Question 5: A, Correct: False, Confidence: 71
+2025-04-26 04:17:57,988 - omr_app - INFO - Question 6: C, Correct: True, Confidence: 62
+2025-04-26 04:17:57,988 - omr_app - INFO - Question 7: C, Correct: True, Confidence: 78
+2025-04-26 04:17:57,988 - omr_app - INFO - Question 8: A, Correct: False, Confidence: 45
+2025-04-26 04:17:57,988 - omr_app - INFO - Question 9: Not marked
+2025-04-26 04:17:57,988 - omr_app - INFO - Question 10: B, Correct: True, Confidence: 60
+2025-04-26 04:17:58,000 - omr_app - INFO - Successfully encoded result image, size: 193492
+2025-04-26 04:18:02,974 - omr_app - INFO - Generated Gemini analysis with 2637 characters
+2025-04-26 04:18:02,975 - omr_app - INFO - Generated Gemini analysis
+2025-04-26 04:18:02,975 - omr_app - INFO - Returning successful response with 10 answers
+2025-04-26 04:20:04,193 - omr_app - INFO - Received file: bea17711-18c0-4d3a-b230-20d60f86934e.jpg, size: 59996 bytes
+2025-04-26 04:20:04,194 - omr_app - INFO - Answer key provided: CACBCCCCCB
+2025-04-26 04:20:04,195 - omr_app - INFO - Created directories: static/uploads/3ad91580-c64a-4263-968e-8a938a658c48, static/results/3ad91580-c64a-4263-968e-8a938a658c48
+2025-04-26 04:20:04,203 - omr_app - INFO - Saved file to static/uploads/3ad91580-c64a-4263-968e-8a938a658c48/bea17711-18c0-4d3a-b230-20d60f86934e.jpg
+2025-04-26 04:20:04,204 - omr_app - INFO - Processed answer key: [2, 0, 2, 1, 2, 2, 2, 2, 2, 1]
+2025-04-26 04:20:05,066 - omr_app - INFO - Applied image enhancement
+2025-04-26 04:20:05,067 - omr_app - INFO - Starting OMR processing...
+2025-04-26 04:20:05,155 - omr_app - INFO - Processing completed in 0.09 seconds
+2025-04-26 04:20:05,155 - omr_app - INFO - OMR processing successful, detected 10 answers
+2025-04-26 04:20:05,156 - omr_app - INFO - Question 1: A, Correct: False, Confidence: 48
+2025-04-26 04:20:05,157 - omr_app - INFO - Question 2: A, Correct: True, Confidence: 69
+2025-04-26 04:20:05,157 - omr_app - INFO - Question 3: Not marked
+2025-04-26 04:20:05,158 - omr_app - INFO - Question 4: Not marked
+2025-04-26 04:20:05,158 - omr_app - INFO - Question 5: A, Correct: False, Confidence: 71
+2025-04-26 04:20:05,159 - omr_app - INFO - Question 6: C, Correct: True, Confidence: 62
+2025-04-26 04:20:05,159 - omr_app - INFO - Question 7: C, Correct: True, Confidence: 78
+2025-04-26 04:20:05,159 - omr_app - INFO - Question 8: A, Correct: False, Confidence: 45
+2025-04-26 04:20:05,160 - omr_app - INFO - Question 9: Not marked
+2025-04-26 04:20:05,161 - omr_app - INFO - Question 10: B, Correct: True, Confidence: 60
+2025-04-26 04:20:05,180 - omr_app - INFO - Successfully encoded result image, size: 193492
+2025-04-26 04:20:10,435 - omr_app - INFO - Generated Gemini analysis with 2582 characters
+2025-04-26 04:20:10,436 - omr_app - INFO - Generated Gemini analysis
+2025-04-26 04:20:10,436 - omr_app - INFO - Returning successful response with 10 answers
+2025-04-26 04:20:37,154 - omr_app - INFO - Received file: e37b96b5-c470-4a56-8eab-ff26adbdf70c.jpg, size: 67260 bytes
+2025-04-26 04:20:37,155 - omr_app - INFO - Answer key provided: CACBCCCCCB
+2025-04-26 04:20:37,156 - omr_app - INFO - Created directories: static/uploads/c2cf7c94-a9fa-41f8-a755-9739e2d1527b, static/results/c2cf7c94-a9fa-41f8-a755-9739e2d1527b
+2025-04-26 04:20:37,164 - omr_app - INFO - Saved file to static/uploads/c2cf7c94-a9fa-41f8-a755-9739e2d1527b/e37b96b5-c470-4a56-8eab-ff26adbdf70c.jpg
+2025-04-26 04:20:37,164 - omr_app - INFO - Processed answer key: [2, 0, 2, 1, 2, 2, 2, 2, 2, 1]
+2025-04-26 04:20:37,921 - omr_app - INFO - Applied image enhancement
+2025-04-26 04:20:37,922 - omr_app - INFO - Starting OMR processing...
+2025-04-26 04:20:37,991 - omr_app - INFO - Processing completed in 0.07 seconds
+2025-04-26 04:20:37,992 - omr_app - INFO - OMR processing successful, detected 10 answers
+2025-04-26 04:20:37,992 - omr_app - INFO - Question 1: B, Correct: False, Confidence: 62
+2025-04-26 04:20:37,992 - omr_app - INFO - Question 2: Not marked
+2025-04-26 04:20:37,993 - omr_app - INFO - Question 3: D, Correct: False, Confidence: 69
+2025-04-26 04:20:37,993 - omr_app - INFO - Question 4: A, Correct: False, Confidence: 59
+2025-04-26 04:20:37,993 - omr_app - INFO - Question 5: C, Correct: True, Confidence: 60
+2025-04-26 04:20:37,994 - omr_app - INFO - Question 6: B, Correct: False, Confidence: 59
+2025-04-26 04:20:37,994 - omr_app - INFO - Question 7: Not marked
+2025-04-26 04:20:37,994 - omr_app - INFO - Question 8: Not marked
+2025-04-26 04:20:37,994 - omr_app - INFO - Question 9: C, Correct: True, Confidence: 75
+2025-04-26 04:20:37,995 - omr_app - INFO - Question 10: B, Correct: True, Confidence: 71
+2025-04-26 04:20:38,009 - omr_app - INFO - Successfully encoded result image, size: 207028
+2025-04-26 04:20:43,664 - omr_app - INFO - Generated Gemini analysis with 2998 characters
+2025-04-26 04:20:43,665 - omr_app - INFO - Generated Gemini analysis
+2025-04-26 04:20:43,665 - omr_app - INFO - Returning successful response with 10 answers
+2025-04-26 04:22:15,245 - omr_app - INFO - Received file: e37b96b5-c470-4a56-8eab-ff26adbdf70c.jpg, size: 67260 bytes
+2025-04-26 04:22:15,246 - omr_app - INFO - Answer key provided: CACBCCCCCB
+2025-04-26 04:22:15,247 - omr_app - INFO - Created directories: static/uploads/a6fb32ef-ed57-484b-a167-3a502ec16a72, static/results/a6fb32ef-ed57-484b-a167-3a502ec16a72
+2025-04-26 04:22:15,254 - omr_app - INFO - Saved file to static/uploads/a6fb32ef-ed57-484b-a167-3a502ec16a72/e37b96b5-c470-4a56-8eab-ff26adbdf70c.jpg
+2025-04-26 04:22:15,255 - omr_app - INFO - Processed answer key: [2, 0, 2, 1, 2, 2, 2, 2, 2, 1]
+2025-04-26 04:22:15,987 - omr_app - INFO - Applied image enhancement
+2025-04-26 04:22:15,987 - omr_app - INFO - Starting OMR processing...
+2025-04-26 04:22:16,061 - omr_app - INFO - Processing completed in 0.07 seconds
+2025-04-26 04:22:16,061 - omr_app - INFO - OMR processing successful, detected 10 answers
+2025-04-26 04:22:16,062 - omr_app - INFO - Question 1: B, Correct: False, Confidence: 62
+2025-04-26 04:22:16,062 - omr_app - INFO - Question 2: Not marked
+2025-04-26 04:22:16,062 - omr_app - INFO - Question 3: D, Correct: False, Confidence: 69
+2025-04-26 04:22:16,063 - omr_app - INFO - Question 4: A, Correct: False, Confidence: 59
+2025-04-26 04:22:16,063 - omr_app - INFO - Question 5: C, Correct: True, Confidence: 60
+2025-04-26 04:22:16,063 - omr_app - INFO - Question 6: B, Correct: False, Confidence: 59
+2025-04-26 04:22:16,063 - omr_app - INFO - Question 7: Not marked
+2025-04-26 04:22:16,064 - omr_app - INFO - Question 8: Not marked
+2025-04-26 04:22:16,064 - omr_app - INFO - Question 9: C, Correct: True, Confidence: 75
+2025-04-26 04:22:16,065 - omr_app - INFO - Question 10: B, Correct: True, Confidence: 71
+2025-04-26 04:22:16,078 - omr_app - INFO - Successfully encoded result image, size: 207028
+2025-04-26 04:22:21,547 - omr_app - INFO - Generated Gemini analysis with 2685 characters
+2025-04-26 04:22:21,547 - omr_app - INFO - Generated Gemini analysis
+2025-04-26 04:22:21,547 - omr_app - INFO - Returning successful response with 10 answers
+2025-04-26 07:38:46,939 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 07:38:50,393 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 07:38:50,557 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 07:52:38,954 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 07:52:43,082 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 07:52:43,264 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 07:53:11,535 - omr_app - INFO - Generated Gemini analysis with 2689 characters
+2025-04-26 07:54:54,063 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 07:54:54,206 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 08:02:36,315 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 08:02:36,463 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 08:03:42,319 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 08:03:42,447 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 08:06:03,705 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 08:06:03,831 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 08:50:41,376 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 08:50:45,524 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 08:50:45,744 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 09:39:35,399 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 09:39:35,579 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 09:40:24,863 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 09:40:28,296 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 09:40:28,423 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 09:42:37,928 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 09:42:37,928 - omr_app - WARNING - Webhook authentication disabled. No WEBHOOK_SECRET environment variable is set.
+2025-04-26 09:42:38,054 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 09:42:38,055 - omr_app - WARNING - Webhook authentication disabled. No WEBHOOK_SECRET environment variable is set.
+2025-04-26 09:42:47,888 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 09:42:47,889 - omr_app - WARNING - Webhook authentication disabled. No WEBHOOK_SECRET environment variable is set.
+2025-04-26 09:42:48,000 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 09:42:48,001 - omr_app - WARNING - Webhook authentication disabled. No WEBHOOK_SECRET environment variable is set.
+2025-04-26 09:44:49,253 - omr_app - INFO - No webhook secret found, generating new one
+2025-04-26 09:44:51,592 - omr_app - INFO - No webhook secret found, generating new one
+2025-04-26 09:44:51,593 - omr_app - INFO - Generated and saved new webhook secret to config/webhook_secret.txt
+2025-04-26 09:44:51,594 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 09:44:51,594 - omr_app - INFO - Webhook authentication enabled with generated secret
+2025-04-26 09:44:51,796 - omr_app - INFO - Loaded webhook secret from config/webhook_secret.txt
+2025-04-26 09:44:51,797 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 09:44:51,798 - omr_app - INFO - Webhook authentication enabled with generated secret
+2025-04-26 09:44:53,675 - omr_app - INFO - Loaded webhook secret from config/webhook_secret.txt
+2025-04-26 09:44:53,675 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 09:44:53,675 - omr_app - INFO - Webhook authentication enabled with generated secret
+2025-04-26 09:44:53,788 - omr_app - INFO - Loaded webhook secret from config/webhook_secret.txt
+2025-04-26 09:44:53,788 - omr_app - INFO - Successfully initialized Gemini AI model
+2025-04-26 09:44:53,788 - omr_app - INFO - Webhook authentication enabled with generated secret

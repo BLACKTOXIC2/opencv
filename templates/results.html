@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMR Scanner Results</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-bottom: 40px;
+        }
+        .result-header {
+            background-color: #343a40;
+            color: white;
+            padding: 1.5rem 0;
+            margin-bottom: 2rem;
+        }
+        .result-container {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+            margin-bottom: 2rem;
+        }
+        .result-image {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+        }
+        .answer-correct {
+            background-color: #d4edda;
+        }
+        .answer-incorrect {
+            background-color: #f8d7da;
+        }
+        .answer-unmarked {
+            background-color: #fff3cd;
+        }
+        .answer-table th, .answer-table td {
+            text-align: center;
+            vertical-align: middle;
+        }
+        .gemini-analysis {
+            border-left: 4px solid #6c757d;
+            padding-left: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">OMR Scanner</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/demo">Demo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/training">Training</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="result-header text-center">
+        <div class="container">
+            <h1>OMR Scanning Results</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="result-container">
+                    <h3 class="mb-4">Processed Image</h3>
+                    <img src="{{ result_image }}" alt="Processed OMR Sheet" class="result-image">
+                    
+                    {% if score is not none %}
+                    <div class="alert alert-info mt-3">
+                        <strong>Score: {{ "%.2f"|format(score) }}%</strong>
+                    </div>
+                    {% endif %}
+                    
+                    <div class="d-grid gap-2 mt-3">
+                        <a href="{{ result_image }}" class="btn btn-outline-primary" download>Download Result Image</a>
+                        <a href="/" class="btn btn-primary">Scan Another Sheet</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="result-container">
+                    <h3 class="mb-4">Detected Answers</h3>
+                    
+                    <div class="table-responsive">
+                        <table class="table table-striped answer-table">
+                            <thead>
+                                <tr>
+                                    <th>Question</th>
+                                    <th>Marked Answer</th>
+                                    {% if answer_key %}
+                                    <th>Correct Answer</th>
+                                    <th>Status</th>
+                                    {% endif %}
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for answer in answers %}
+                                <tr class="{% if answer.correct %}answer-correct{% elif answer.answer == 'Not marked' %}answer-unmarked{% else %}answer-incorrect{% endif %}">
+                                    <td>{{ answer.question }}</td>
+                                    <td><strong>{{ answer.answer }}</strong></td>
+                                    {% if answer_key %}
+                                    <td>{{ answer_key[loop.index0] }}</td>
+                                    <td>
+                                        {% if answer.correct %}
+                                        <span class="badge bg-success">Correct</span>
+                                        {% elif answer.answer == 'Not marked' %}
+                                        <span class="badge bg-warning text-dark">Unmarked</span>
+                                        {% else %}
+                                        <span class="badge bg-danger">Incorrect</span>
+                                        {% endif %}
+                                    </td>
+                                    {% endif %}
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                {% if gemini_analysis %}
+                <div class="result-container">
+                    <h3 class="mb-3">AI Analysis</h3>
+                    <div class="gemini-analysis">
+                        {{ gemini_analysis | replace('\n', '<br>') | safe }}
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">© 2025 OMR Scanner with AI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

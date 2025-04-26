@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth Test</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .instructions {
+            background-color: #f8f9fa;
+        }
+        .error {
+            background-color: #fff3f3;
+            border-left: 4px solid #dc3545;
+        }
+        .success {
+            background-color: #f1fff0;
+            border-left: 4px solid #28a745;
+        }
+        code {
+            background-color: #f1f1f1;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: Monaco, monospace;
+        }
+        pre {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Supabase Auth Test</h1>
+    
+    <div class="card instructions">
+        <h2>Configuration Instructions</h2>
+        <p>To use Supabase authentication, you need to:</p>
+        <ol>
+            <li>Create a Supabase account at <a href="https://supabase.com" target="_blank">supabase.com</a></li>
+            <li>Create a new project</li>
+            <li>Get your project URL and anon key from the API settings</li>
+            <li>Update the <code>static/js/supabase.js</code> file with your credentials</li>
+        </ol>
+        
+        <h3>Example Configuration</h3>
+        <pre>// Import Supabase from CDN
+import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm';
+
+// Initialize Supabase client
+const supabaseUrl = 'https://example.supabase.co';  // Replace with your URL
+const supabaseKey = 'your-anon-key';                // Replace with your key
+const supabase = createClient(supabaseUrl, supabaseKey);
+
+export default supabase;</pre>
+    </div>
+    
+    <div id="output" class="card">Testing Supabase connection...</div>
+    
+    <script type="module">
+        // Import directly from CDN to test
+        import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm';
+        
+        // Display output
+        const outputDiv = document.getElementById('output');
+        
+        try {
+            // Get project URL and anon key from the form or use defaults for testing
+            const supabaseUrl = 'https://example.supabase.co'; // This is just a placeholder
+            const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9'; // This is an invalid key
+            
+            // Check if valid URL
+            if (supabaseUrl === 'https://example.supabase.co' || 
+                supabaseUrl === 'YOUR_SUPABASE_URL' ||
+                supabaseKey === 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9' || 
+                supabaseKey === 'YOUR_SUPABASE_ANON_KEY') {
+                
+                outputDiv.className = 'card error';
+                outputDiv.innerHTML = `
+                    <h3>⚠️ Configuration Required</h3>
+                    <p>You need to update your Supabase configuration with valid credentials:</p>
+                    <ol>
+                        <li>Open <code>static/js/supabase.js</code></li>
+                        <li>Replace the placeholder URL and key with your actual Supabase project credentials</li>
+                        <li>Refresh this page to test the connection</li>
+                    </ol>
+                `;
+                throw new Error('Invalid Supabase configuration');
+            }
+            
+            // Create client
+            const supabase = createClient(supabaseUrl, supabaseKey);
+            
+            outputDiv.className = 'card success';
+            outputDiv.innerHTML = '<h3>✓ Successfully loaded Supabase</h3><p>The client was initialized correctly.</p>';
+            
+            // Test the API
+            supabase.auth.onAuthStateChange((event, session) => {
+                outputDiv.innerHTML += `<p>Auth state change: ${event}</p>`;
+            });
+            
+        } catch (error) {
+            if (!outputDiv.innerHTML.includes('Configuration Required')) {
+                outputDiv.className = 'card error';
+                outputDiv.innerHTML = `
+                    <h3>❌ Error</h3>
+                    <p>${error.message}</p>
+                    <p>Check your browser console for more details.</p>
+                `;
+            }
+            console.error('Error:', error);
+        }
+    </script>
+</body>
+</html> 
